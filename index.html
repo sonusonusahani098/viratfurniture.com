@@ -1,289 +1,1106 @@
-<!doctype html>
-<html lang="en-IN">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Virat Furniture & Interior Contractor Surat | 16+ Years Experience</title>
-  <meta name="description" content="Virat Furniture & Interior Contractor provides premium furniture and interior contracting services in Surat including Vesu, Adajan, Pal, City Light, Piplod, VIP Road and nearby areas. 16+ years experience in 3 BHK, 4 BHK, 5 BHK, villa and commercial projects.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://viratfurniture.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Virat Furniture & Interior Contractor Surat | 16+ Years Experience">
-  <meta property="og:description" content="Premium furniture contractor and interior contractor in Surat for 3 BHK, 4 BHK, 5 BHK, villas and commercial projects.">
-  <meta property="og:url" content="https://viratfurniture.com/">
-  <meta property="og:site_name" content="Virat Furniture & Interior Contractor">
-  <meta property="og:image" content="https://viratfurniture.com/assets/img/virat-furniture-interior-contractor-surat.svg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Virat Furniture & Interior Contractor Surat">
-  <meta name="twitter:description" content="Furniture work, modular furniture, wardrobes, TV units and full interior contracting across Surat.">
-  <meta name="twitter:image" content="https://viratfurniture.com/assets/img/virat-furniture-interior-contractor-surat.svg">
-  <link rel="preload" href="assets/css/styles.min.css" as="style">
-  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virat Furniture – Premium Custom Furniture in Surat</title>
+  <meta name="description" content="Virat Furniture by Shubham Sahani – Custom modular furniture for homes and offices in Vesu, Adajan, Pal, Gaurav Path, Surat. Beds, almaris, gates, kitchens & more." />
+  <meta name="keywords" content="furniture surat, modular furniture vesu, custom furniture adajan, bed almari surat, virat furniture, shubham sahani" />
+  <meta name="author" content="Shubham Sahani" />
+  <meta property="og:title" content="Virat Furniture – Custom Furniture Surat" />
+  <meta property="og:description" content="Premium modular furniture for 3BHK, 4BHK, 5BHK homes in Surat. Beds, almaris, gates, kitchens." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://viratfurniture.com" />
+  <link rel="canonical" href="https://viratfurniture.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FCF8F3;
+      --cream2: #F5EDE4;
+      --walnut: #2E1E16;
+      --walnut-light: #4A3428;
+      --gold: #B8860B;
+      --gold-light: #D4A037;
+      --gold-pale: #F3E5D8;
+      --white: #FFFFFF;
+      --text: #2C1E16;
+      --text-soft: #5A4A3A;
+      --shadow: 0 20px 60px rgba(44, 30, 22, 0.08);
+      --shadow-hover: 0 30px 80px rgba(44, 30, 22, 0.12);
+      --radius: 16px;
+      --ff-head: 'Playfair Display', Georgia, serif;
+      --ff-body: 'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--cream2); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(184, 134, 11, 0.15);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 76px;
+      transition: background 0.3s;
+    }
+    .nav-logo {
+      font-family: var(--ff-head);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--walnut);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex; gap: 2.5rem; list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-soft);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0%; height: 2px; background: var(--gold);
+      transition: width 0.25s;
+    }
+    .nav-links a:hover { color: var(--walnut); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--walnut);
+      color: var(--white);
+      padding: 0.6rem 1.6rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(44, 30, 22, 0.15);
+    }
+    .nav-cta:hover { background: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3); }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 26px; height: 2.5px; background: var(--walnut); transition: all 0.3s; border-radius: 2px; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(145deg, #FCF8F3 0%, #F5EDE4 100%);
+      display: flex; align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 5% 80px;
+    }
+    #hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(184,134,11,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    #hero::after {
+      content: ''; position: absolute; bottom: -20%; left: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(184,134,11,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+      align-items: center; width: 100%; position: relative; z-index: 1;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(184,134,11,0.12);
+      border: 1px solid rgba(184,134,11,0.2);
+      padding: 0.4rem 1.2rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s ease both;
+    }
+    .hero-tag::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); animation: blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .hero-h1 {
+      font-family: var(--ff-head);
+      font-size: clamp(3rem, 5.5vw, 4.8rem);
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--walnut);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    .hero-h1 em {
+      font-style: normal;
+      color: var(--gold);
+      position: relative;
+    }
+    .hero-h1 em::after {
+      content: ''; position: absolute; left: 0; bottom: 2px;
+      width: 100%; height: 4px;
+      background: var(--gold-light);
+      transform: scaleX(0); transform-origin: left;
+      animation: line-reveal 0.8s 0.8s ease forwards;
+    }
+    @keyframes line-reveal { to { transform: scaleX(1); } }
+
+    .hero-desc {
+      font-size: 1.1rem; line-height: 1.8;
+      color: var(--text-soft);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+    .hero-actions {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .btn-primary {
+      background: var(--walnut);
+      color: var(--white);
+      padding: 0.9rem 2.4rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 24px rgba(44, 30, 22, 0.2);
+    }
+    .btn-primary:hover { background: var(--gold); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(184, 134, 11, 0.3); }
+    .btn-outline {
+      border: 1.5px solid var(--walnut);
+      color: var(--walnut);
+      padding: 0.9rem 2.4rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { background: var(--walnut); color: var(--white); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(44,30,22,0.1); }
+
+    .hero-visual {
+      animation: fadeUp 0.6s 0.4s ease both;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+    .hero-card-title {
+      font-family: var(--ff-head);
+      font-size: 1rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    .service-pills {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+    }
+    .pill {
+      background: var(--white);
+      border: 1px solid var(--cream2);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .pill:hover { background: var(--walnut); color: var(--white); border-color: var(--walnut); transform: translateY(-2px); }
+    .hero-divider { height: 1px; background: var(--cream2); margin: 1.5rem 0; }
+    .hero-contact-row {
+      display: flex; align-items: center; gap: 0.75rem;
+      color: var(--text-soft);
+      font-size: 0.9rem;
+    }
+    .hero-contact-row a { color: var(--walnut); text-decoration: none; font-weight: 600; }
+    .hero-contact-row a:hover { color: var(--gold); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--white);
+      border-top: 1px solid var(--cream2);
+      border-bottom: 1px solid var(--cream2);
+      padding: 3rem 5%;
+    }
+    .stats-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 2rem; text-align: center;
+    }
+    .stat-num {
+      font-family: var(--ff-head);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--walnut);
+      line-height: 1;
+    }
+    .stat-label {
+      color: var(--text-soft);
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+      font-weight: 500;
+    }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: 6rem 5%; }
+    .section-inner { max-width: 1280px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      background: rgba(184,134,11,0.08);
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+    }
+    .section-h2 {
+      font-family: var(--ff-head);
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      color: var(--walnut);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      color: var(--text-soft);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 3.5rem;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--white); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .svc-card {
+      background: var(--cream);
+      border: 1px solid var(--cream2);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      transition: all 0.3s;
+      cursor: default;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .svc-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); border-color: var(--gold-pale); }
+    .svc-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.9rem;
+      border-radius: 40px;
+      margin-bottom: 1.2rem;
+    }
+    .svc-icon { font-size: 2.4rem; margin-bottom: 1rem; display: block; }
+    .svc-title {
+      font-family: var(--ff-head);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--walnut);
+      margin-bottom: 0.3rem;
+    }
+    .svc-subtitle {
+      font-size: 0.85rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.02em;
+    }
+    .svc-desc {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    /* ── WORK ── */
+    #work { background: var(--cream2); }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.2rem;
+    }
+    .work-item {
+      background: var(--white);
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.2rem;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: default;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .work-item:hover { background: var(--walnut); color: var(--white); transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .work-item:hover .work-name { color: var(--white); }
+    .work-item:hover .work-note { color: rgba(255,255,255,0.6); }
+    .work-icon { font-size: 2.2rem; margin-bottom: 0.6rem; }
+    .work-name {
+      font-family: var(--ff-head);
+      font-size: 1.1rem;
+      color: var(--walnut);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .work-note { font-size: 0.8rem; color: var(--text-soft); margin-top: 0.3rem; transition: color 0.2s; }
+
+    /* ── AREAS ── */
+    #areas { background: var(--white); }
+    .areas-flex {
+      display: flex; flex-wrap: wrap; gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    .area-tag {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: var(--cream);
+      border: 1px solid var(--cream2);
+      padding: 0.7rem 1.5rem;
+      border-radius: 60px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.2s;
+      cursor: default;
+    }
+    .area-tag:hover { background: var(--walnut); color: var(--white); border-color: var(--walnut); transform: translateY(-3px); box-shadow: 0 6px 16px rgba(44,30,22,0.08); }
+    .area-tag svg { width: 16px; height: 16px; fill: var(--gold); flex-shrink: 0; }
+    .area-tag:hover svg { fill: var(--white); }
+
+    .areas-note {
+      margin-top: 2.5rem;
+      padding: 1.5rem 2rem;
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    /* ── WHY ── */
+    #why { background: var(--cream); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .why-item {
+      padding: 2rem;
+      border-radius: var(--radius);
+      background: var(--white);
+      border: 1px solid var(--cream2);
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .why-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--gold-pale); }
+    .why-num {
+      font-family: var(--ff-head);
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--gold-pale);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .why-title {
+      font-family: var(--ff-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--walnut);
+      margin-bottom: 0.5rem;
+    }
+    .why-desc { font-size: 0.9rem; color: var(--text-soft); line-height: 1.7; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--walnut); }
+    #contact .section-h2 { color: var(--white); }
+    #contact .section-sub { color: rgba(255,255,255,0.6); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+      align-items: start;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+    .contact-row {
+      display: flex; align-items: center; gap: 1.2rem;
+      padding: 1.2rem 1.5rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+    .contact-row:hover { border-color: rgba(184,134,11,0.3); background: rgba(255,255,255,0.07); }
+    .contact-ico { font-size: 1.4rem; flex-shrink: 0; }
+    .contact-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem; }
+    .contact-val { color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.5; }
+    .contact-val a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+    .contact-val a:hover { color: var(--gold); }
+
+    .contact-form-wrap {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      backdrop-filter: blur(4px);
+    }
+    .contact-form-wrap h3 {
+      font-family: var(--ff-head);
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 1.8rem;
+    }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.4rem;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 0.8rem 1.2rem;
+      color: rgba(255,255,255,0.85);
+      font-family: var(--ff-body);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--gold); background: rgba(255,255,255,0.08); }
+    .form-group select option { background: var(--walnut); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-submit {
+      width: 100%;
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      padding: 0.9rem;
+      border-radius: 60px;
+      font-family: var(--ff-body);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      margin-top: 0.5rem;
+      box-shadow: 0 4px 16px rgba(184,134,11,0.3);
+    }
+    .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(184,134,11,0.4); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #1A120E;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      padding: 3rem 5%;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--ff-head);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.25); margin-top: 1.5rem; line-height: 1.7; }
+    .footer-links { display: flex; justify-content: center; gap: 2.5rem; margin: 1.2rem 0; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; letter-spacing: 0.06em; }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── BACK TO TOP ── */
+    #back-top {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+      background: var(--walnut);
+      color: var(--white);
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s, transform 0.2s;
+      box-shadow: 0 4px 20px rgba(44, 30, 22, 0.2);
+    }
+    #back-top.show { opacity: 1; pointer-events: all; }
+    #back-top:hover { transform: translateY(-4px); background: var(--gold); }
+
+    /* ── WHATSAPP FAB ── */
+    #wa-fab {
+      position: fixed; bottom: 6rem; right: 2rem; z-index: 99;
+      background: #25D366;
+      color: var(--white);
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    #wa-fab:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 10px 36px rgba(37, 211, 102, 0.45); }
+
+    /* ── MOBILE NAV ── */
+    .mobile-nav {
+      display: none;
+      position: fixed; inset: 0; z-index: 99;
+      background: var(--cream);
+      flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--ff-head);
+      font-size: 1.8rem;
+      color: var(--walnut);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--gold); }
+    .mobile-nav-close {
+      position: absolute; top: 1.8rem; right: 1.8rem;
+      background: none; border: none; color: var(--walnut);
+      font-size: 1.8rem; cursor: pointer;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-visual { display: none; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .btn-primary, .btn-outline { text-align: center; }
+      section { padding: 4rem 5%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://viratfurniture.com/#localbusiness",
-        "name": "Virat Furniture & Interior Contractor",
-        "image": "https://viratfurniture.com/assets/img/virat-furniture-interior-contractor-surat.svg",
-        "url": "https://viratfurniture.com/",
-        "telephone": "+919725713944",
-        "email": "service@viratfurniture.com",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Wood Square, 244, Subhash Chandra Bose Marg, TGB, Adajan Gam, Adajan",
-          "addressLocality": "Surat",
-          "addressRegion": "Gujarat",
-          "postalCode": "395009",
-          "addressCountry": "IN"
-        },
-        "areaServed": ["Vesu Surat","Adajan Surat","Pal Surat","City Light Surat","Piplod Surat","VIP Road Surat","Althan Surat","Dumas Road Surat","Gaurav Path Surat","Jahangirpura Surat","Bhimrad Surat","New City Light Surat","Athwa Surat"],
-        "openingHoursSpecification": [{
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "09:00",
-          "closes": "20:00"
-        }],
-        "sameAs": ["https://viratfurniture.com/"]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://viratfurniture.com/#faq",
-        "mainEntity": [
-          {"@type":"Question","name":"What is the cost of furniture work in Surat?","acceptedAnswer":{"@type":"Answer","text":"The cost of furniture work in Surat depends on material, finish, size, hardware, design complexity and site scope. Virat Furniture & Interior Contractor provides a site visit and detailed quotation for apartments, villas and commercial projects."}},
-          {"@type":"Question","name":"Do you provide 3 BHK furniture work?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide complete 3 BHK furniture work in Surat including modular kitchen, wardrobes, beds, TV unit, storage, study unit, pooja unit and custom interior furniture."}},
-          {"@type":"Question","name":"Do you provide modular kitchen services?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design and execute modular kitchen services with practical layouts, branded hardware, shutters, baskets, loft storage, countertop coordination and installation."}},
-          {"@type":"Question","name":"Which areas of Surat do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Vesu, Adajan, Pal, City Light, Piplod, VIP Road, Althan, Dumas Road, Gaurav Path, Jahangirpura, Bhimrad, New City Light, Athwa and nearby Surat areas."}},
-          {"@type":"Question","name":"How much experience do you have?","acceptedAnswer":{"@type":"Answer","text":"Virat Furniture & Interior Contractor has 16+ years of experience in residential, villa and commercial furniture contracting in Surat."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://viratfurniture.com/#breadcrumb",
-        "itemListElement": [
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://viratfurniture.com/"}
-        ]
-      }
-    ]
+    "@type": "LocalBusiness",
+    "name": "Virat Furniture",
+    "description": "Custom modular furniture for homes and offices in Surat — beds, almaris, gates, kitchens, and more.",
+    "url": "https://viratfurniture.com",
+    "telephone": "+919725713944",
+    "email": "service@viratfurniture.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wood Square, 244, Subhash Chandra Bose Marg, TGB, Adajan Gam",
+      "addressLocality": "Surat",
+      "addressRegion": "Gujarat",
+      "postalCode": "395009",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Vesu, Surat", "Adajan, Surat", "Pal, Surat", "Gaurav Path, Surat"],
+    "founder": { "@type": "Person", "name": "Shubham Sahani" },
+    "foundingDate": "2008",
+    "numberOfEmployees": "16"
   }
   </script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Virat Furniture home">
-      <img src="assets/img/virat-furniture-interior-contractor-surat.svg" width="58" height="58" alt="Virat Furniture & Interior Contractor Surat logo" loading="eager">
-      <span>Virat Furniture</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="areas-we-serve.html">Areas We Serve</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-    <a class="header-call" href="tel:+919725713944">Call 09725713944</a>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">Furniture Contractor Surat | Interior Contractor Surat</p>
-        <h1>Best Furniture & Interior Contractor in Surat</h1>
-        <p>Virat Furniture & Interior Contractor delivers premium furniture work in Surat for 3 BHK, 4 BHK, 5 BHK, luxury villas, offices, showrooms and commercial interiors. With 16+ years of hands-on experience, our team handles modular furniture, wardrobes, TV units, beds, kitchens, wall panels, storage and full interior execution across Vesu, Adajan, Pal, City Light, Piplod, VIP Road, Althan and nearby premium areas.</p>
-        <div class="actions">
-          <a class="btn primary" href="tel:+919725713944">Click to Call</a>
-          <a class="btn secondary" href="https://wa.me/919725713944" rel="noopener">WhatsApp Quote</a>
+<!-- NAV -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="Virat Furniture home">Virat<span>Furniture</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Our Work</a></li>
+    <li><a href="#areas">Areas</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:09725713944" class="nav-cta" aria-label="Call us now">Call Now</a>
+  <div class="hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#work" class="mobile-link">Our Work</a>
+  <a href="#areas" class="mobile-link">Areas</a>
+  <a href="#why" class="mobile-link">Why Us</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="tel:09725713944" style="color:var(--gold);font-size:1.2rem;margin-top:1rem;">📞 097257 13944</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">Surat's Trusted Furniture Craftsmen</div>
+      <h1 class="hero-h1">
+        Furniture Built for<br />
+        <em>Your Home,</em><br />
+        Your Life.
+      </h1>
+      <p class="hero-desc">
+        From beds and almaris to custom gates — Virat Furniture delivers precision-crafted, modular furniture for homes across Adajan, Vesu, Pal &amp; Gaurav Path. 16+ years of craftsmanship, 12 buildings served.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="#work" class="btn-outline">See Our Work</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-title">We Make</div>
+        <div class="service-pills">
+          <span class="pill">🛏 Beds</span>
+          <span class="pill">🚪 Almaris</span>
+          <span class="pill">🏠 Main Gates</span>
+          <span class="pill">🍳 Kitchens</span>
+          <span class="pill">📚 Study Units</span>
+          <span class="pill">🪑 Sofas</span>
+          <span class="pill">🗄 Storage</span>
+          <span class="pill">🛁 Vanity</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-contact-row">
+          📍 <span>Adajan Gam, Surat – 395009</span>
+        </div>
+        <div class="hero-contact-row" style="margin-top:0.6rem;">
+          📞 <a href="tel:09725713944">097257 13944</a>
         </div>
       </div>
-      <div class="hero-panel" aria-label="Virat Furniture project highlights">
-        <img src="assets/img/virat-furniture-interior-contractor-surat.svg" width="380" height="300" alt="Virat Furniture & Interior Contractor Surat modular furniture and interior work brand mark" loading="eager">
-        <div class="metric-row"><strong>16+</strong><span>Years Experience</span></div>
-        <div class="metric-row"><strong>500+</strong><span>Projects Completed</span></div>
-        <div class="metric-row"><strong>Surat</strong><span>Vesu, Adajan, Pal, City Light, Piplod</span></div>
-      </div>
-    </section>
-
-    <section class="quick-links" aria-label="Popular SEO links">
-      <a href="services.html#modular-furniture">Modular Furniture Surat</a>
-      <a href="services.html#wardrobe">Wardrobe Contractor Surat</a>
-      <a href="services.html#tv-unit">TV Unit Contractor Surat</a>
-      <a href="services.html#bed-furniture">Bed Furniture Contractor Surat</a>
-      <a href="areas-we-serve.html#vesu">Furniture Contractor Vesu</a>
-      <a href="areas-we-serve.html#adajan">Furniture Contractor Adajan</a>
-      <a href="areas-we-serve.html#pal">Furniture Contractor Pal</a>
-      <a href="areas-we-serve.html#city-light">Furniture Contractor City Light</a>
-      <a href="areas-we-serve.html#piplod">Furniture Contractor Piplod</a>
-    </section>
-
-    <section id="services">
-      <p class="eyebrow">Services</p>
-      <h2>Furniture Contractor Services in Surat</h2>
-      <p class="section-intro">Our furniture contractor services in Surat cover design coordination, measurement, material planning, manufacturing, site installation and final finishing. We work for homeowners, builders, architects, interior designers and commercial property owners who need dependable execution with clean detailing.</p>
-      <div class="card-grid">
-        <article class="card"><h3>Modular Furniture Surat</h3><p>Kitchen units, wardrobes, lofts, storage, beds, TV units, study tables, pooja units and utility furniture built to exact site measurements.</p><a href="services.html#modular-furniture">View modular furniture</a></article>
-        <article class="card"><h3>Carpenter Contractor Surat</h3><p>Experienced carpentry teams for apartment, bungalow, villa, shop and office projects with reliable site supervision.</p><a href="services.html#carpenter-contractor">View carpentry work</a></article>
-        <article class="card"><h3>Interior Designer Surat Support</h3><p>We coordinate with designers and architects to execute drawings, materials, finishes and site details exactly as planned.</p><a href="services.html#interior-execution">View interior execution</a></article>
-      </div>
-    </section>
-
-    <section id="solutions" class="band">
-      <p class="eyebrow">Homes & Commercial</p>
-      <h2>Interior Furniture Solutions for Homes & Commercial Projects</h2>
-      <p>From 3 BHK apartment furniture in Vesu Surat to villa furniture on Dumas Road Surat and commercial furniture on Gaurav Path Surat, our process stays organized: site measurement, design discussion, material selection, quotation, production, installation and snag correction. We focus on long-lasting hardware, practical storage, accurate shutters, smooth finishes and furniture that suits daily family or business use.</p>
-    </section>
-
-    <section id="areas">
-      <p class="eyebrow">Local SEO</p>
-      <h2>Areas We Serve in Surat</h2>
-      <p class="section-intro">We provide furniture work and interior contracting in Vesu Surat, Adajan Surat, Pal Surat, City Light Surat, Piplod Surat, VIP Road Surat, Althan Surat, Dumas Road Surat, Gaurav Path Surat, Jahangirpura Surat, Bhimrad Surat and New City Light Surat.</p>
-      <div class="area-grid">
-        <a href="#furniture-work-vesu">Vesu Surat</a>
-        <a href="#furniture-work-adajan">Adajan Surat</a>
-        <a href="#furniture-work-pal">Pal Surat</a>
-        <a href="#furniture-work-city-light">City Light Surat</a>
-        <a href="#furniture-work-piplod">Piplod Surat</a>
-        <a href="#furniture-work-vip-road">VIP Road Surat</a>
-        <a href="#furniture-work-althan">Althan Surat</a>
-      </div>
-    </section>
-
-    <section class="seo-area" id="furniture-work-vesu">
-      <h2>Furniture Work in Vesu</h2>
-      <p>Vesu Surat has become one of the most active residential and premium apartment markets in the city, and furniture work in Vesu needs a contractor who understands both modern layouts and practical family living. Virat Furniture & Interior Contractor provides complete furniture contractor services in Vesu for 3 BHK, 4 BHK, 5 BHK, penthouse and villa projects. We handle modular kitchens, full-height wardrobes, hydraulic beds, TV units, crockery units, study furniture, shoe racks, pooja units, wall paneling, ceiling coordination and storage planning with accurate site measurements. Many Vesu homes have compact utility spaces, large drawing rooms, open kitchens and bedrooms that need furniture customized to the exact wall size, electrical points and movement area. Our team studies the site before production so drawers open comfortably, shutters align correctly, loft storage remains accessible and the final finish suits the home decor.</p>
-      <p>As a furniture contractor in Vesu Surat, we also coordinate with interior designers, builders and homeowners who already have drawings or reference images. We convert those ideas into workable furniture with the right plywood, laminate, veneer, acrylic, hardware, edge banding, channels and hinges based on budget and usage. For families moving into new apartments near VIP Road, Bhimrad, New City Light or Vesu canal-side developments, timeline is often critical. Our in-house carpentry and installation approach helps keep work organized from material purchase to final handover. We also advise on wardrobe depth, kitchen zoning, overhead storage, TV wall proportions and bed storage options so the furniture looks premium without wasting space.</p>
-      <p>Homeowners choose Virat Furniture & Interior Contractor for Vesu furniture work because we combine 16+ years of Surat site experience with direct execution. Whether the requirement is a single wardrobe, a modular kitchen, a complete 3 BHK furniture package or luxury villa furniture, we provide a clear quotation, site visit and planned installation. If you are searching for Furniture Contractor Vesu, Interior Contractor Surat, Modular Furniture Surat or Carpenter Contractor Surat, our Adajan-based team serves Vesu quickly and professionally.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-adajan">
-      <h2>Furniture Work in Adajan</h2>
-      <p>Adajan Surat is our home base, which gives Virat Furniture & Interior Contractor a strong advantage for fast site visits, reliable measurements and close coordination during furniture work. From older Adajan apartments near Adajan Gam to modern flats around Pal-Adajan, TGB, Honey Park, LP Savani and river-side residential areas, we have worked across different building styles and room sizes. Furniture work in Adajan often requires smart use of available space, especially when families want more storage without making rooms feel heavy. We design and execute wardrobes, beds, TV units, modular kitchens, wall-mounted storage, dressing units, study tables, living room partitions and commercial counters with careful attention to dimensions and daily use.</p>
-      <p>Being located at Wood Square, 244, Subhash Chandra Bose Marg, TGB, Adajan Gam, Adajan, Surat, Gujarat 395009 makes it easy for Adajan clients to connect with us for furniture contractor services. We provide site visits, material discussions and estimates for 3 BHK furniture work, 4 BHK homes, bungalows, offices, clinics, shops and showrooms. Our 16+ years of experience helps us recommend practical choices such as moisture-resistant material near kitchens, durable hinges for heavy shutters, smooth drawer channels, easy-clean laminates for children's rooms and premium finishes for living spaces. We also coordinate with electricians, painters, glass vendors and stone teams when required so the overall interior work moves in a planned manner.</p>
-      <p>As a furniture contractor in Adajan Surat, we focus on dependable execution rather than only attractive visuals. A well-made wardrobe should close evenly, a TV unit should hide wires neatly, a bed should provide solid storage, and a modular kitchen should make cooking easier every day. That is why our process starts with understanding how the family uses each room. If you are searching for Furniture Contractor Adajan, Furniture Work Surat, Wardrobe Contractor Surat, TV Unit Contractor Surat or Bed Furniture Contractor Surat, Virat Furniture & Interior Contractor is ready to help with complete furniture work in Adajan and nearby Pal, Jahangirpura and Rander areas.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-pal">
-      <h2>Furniture Work in Pal</h2>
-      <p>Pal Surat is known for new residential towers, premium apartments and family homes where interior furniture needs to look elegant while staying functional for daily life. Virat Furniture & Interior Contractor offers complete furniture work in Pal for homeowners who want a reliable contractor for modular kitchens, bedroom furniture, wardrobes, TV units, beds, storage, shoe racks, study units, pooja units and full-house interior furniture. Pal projects often involve modern room layouts, attached balconies, compact passages and large master bedrooms, so furniture must be planned with circulation space, storage requirement and design balance in mind. Our team takes detailed site measurements and checks wall levels, switch positions, plumbing points and ceiling heights before finalizing furniture execution.</p>
-      <p>For 3 BHK and 4 BHK furniture work in Pal Surat, we help families decide where to invest for long-term value. A kitchen may need branded baskets and strong hardware, wardrobes may need sliding shutters or loft storage, and the living room may need a TV unit that includes display, storage and concealed wiring. We also build beds with hydraulic or box storage, side tables, dressing units and customized study furniture for children's rooms. If an interior designer has already prepared drawings, we can execute them with precision. If the homeowner needs practical suggestions, we provide layout guidance based on our experience as a furniture contractor in Surat.</p>
-      <p>Virat Furniture & Interior Contractor serves Pal from our Adajan office with quick access and consistent supervision. We understand that many Pal clients compare multiple contractors for cost, quality and timeline, so we keep our communication clear. The quote explains material, finish and scope, and the installation is planned to reduce disturbance at site. Whether your project is near Palanpur Canal Road, Pal Gam, Adajan-Pal Road or nearby Gaurav Path, our team can manage furniture work with a professional process. For searches like Furniture Contractor Pal, Interior Contractor Surat, Modular Furniture Surat and Carpenter Contractor Surat, our Pal furniture service is built for quality and local reliability.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-city-light">
-      <h2>Furniture Work in City Light</h2>
-      <p>City Light Surat has a mix of premium apartments, established societies, commercial spaces and luxury homes where furniture work must blend design, durability and space planning. Virat Furniture & Interior Contractor provides furniture work in City Light for families and businesses looking for experienced interior execution. We build wardrobes, beds, modular kitchens, TV units, wall panels, storage units, office furniture, reception counters and customized furniture for apartments, villas, clinics and showrooms. City Light homes often need renovation-friendly furniture solutions because many properties are already occupied. Our team plans measurement, manufacturing and installation in a way that keeps site disruption manageable while still delivering a polished finish.</p>
-      <p>As a furniture contractor in City Light Surat, we understand the importance of detail. A premium wardrobe needs proper internal partitioning, smooth shutters and strong hardware. A living room TV unit must suit the wall size, viewing distance, speaker points and decor theme. A modular kitchen should make cooking efficient with practical storage for utensils, pantry items, appliances and daily-use accessories. We help clients choose finishes such as laminate, veneer, acrylic, glass, profile shutters and decorative panels based on the interior style and maintenance preference. Our 16+ years of work across Surat also helps us identify site issues early, such as uneven walls, moisture-prone corners, tight staircases and lift-size limitations.</p>
-      <p>Many City Light clients search for Interior Designer Surat or Interior Contractor Surat because they want a complete result instead of disconnected carpentry. Virat Furniture & Interior Contractor bridges that gap by coordinating design ideas with actual furniture execution. We work with drawings, references or our own practical suggestions to complete furniture work that is strong, neat and usable. Whether you need a full 3 BHK package, bedroom wardrobes, a modular kitchen, a TV wall, a study area or commercial furniture near City Light and New City Light, our team can provide a site visit and estimate. For Furniture Contractor City Light, Furniture Work Surat and Wardrobe Contractor Surat keywords, this service page supports the exact local need.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-piplod">
-      <h2>Furniture Work in Piplod</h2>
-      <p>Piplod Surat is a preferred area for premium apartments, commercial spaces, showrooms and homes close to major lifestyle destinations. Furniture work in Piplod usually demands a refined finish, smart storage and clean installation because clients expect the interior to match modern living standards. Virat Furniture & Interior Contractor offers furniture contractor services in Piplod for complete home furniture, modular kitchens, bedroom wardrobes, TV units, beds, study units, office furniture and commercial interior furniture. We begin with a site visit and measurement so every unit is planned around actual dimensions, wall conditions, floor levels and usage patterns. This helps reduce adjustment problems during installation and gives the final furniture a more precise look.</p>
-      <p>For Piplod homes, we frequently recommend layouts that keep rooms open while increasing storage. Sliding wardrobes can work well in compact bedrooms, loft storage helps use vertical height, hydraulic beds provide additional storage, and wall-mounted TV units keep living areas lighter. Modular kitchen planning includes working triangle, sink-stove-fridge placement, tall units, drawer organization, corner solutions and overhead storage. For commercial properties in and around Piplod, we build reception counters, display units, workstations, storage cabinets and customized woodwork based on the brand requirement. Our experience as a carpenter contractor in Surat allows us to execute both residential and commercial furniture with dependable workmanship.</p>
-      <p>Virat Furniture & Interior Contractor is suitable for clients searching Furniture Contractor Piplod, Furniture Work Surat, Modular Furniture Surat or Interior Contractor Surat because we combine local reach with 16+ years of execution experience. We also serve nearby VIP Road, Vesu, Dumas Road and City Light, making coordination convenient for multi-site projects or clients shifting between nearby localities. Each project receives attention to material quality, fitting, edge finish, hardware selection and final cleaning. If you need Piplod furniture work for a new flat, renovation, villa, showroom or office, our team can provide a practical estimate and a clear path from design discussion to handover.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-vip-road">
-      <h2>Furniture Work in VIP Road</h2>
-      <p>VIP Road Surat connects some of the city's most active residential and commercial pockets, including Vesu, Piplod, Bhimrad and New City Light. Furniture work on VIP Road often includes premium apartments, offices, clinics, retail spaces and homes that require both attractive design and practical execution. Virat Furniture & Interior Contractor provides furniture work in VIP Road for modular kitchens, wardrobes, beds, TV units, wall panels, storage, office furniture, counters, display furniture and full interior contracting. Because many properties near VIP Road have modern layouts and tight project timelines, we focus on organized site measurement, clear quotations, planned production and coordinated installation.</p>
-      <p>Our approach to furniture contractor services in VIP Road Surat starts with understanding the site and the client's priorities. Some families want maximum storage for a 3 BHK home, some want a luxury living room wall with premium finish, and some commercial clients need durable furniture that can handle daily customer use. We recommend materials and hardware accordingly. For kitchens, we plan drawer systems, shutters, lofts, baskets and appliance spaces. For bedrooms, we build wardrobes with internal sections that suit clothing, luggage, accessories and daily essentials. For living rooms, we design TV units with wire management, display space and proportionate storage. This makes the furniture useful beyond appearance.</p>
-      <p>Clients on VIP Road often search for Furniture Contractor Surat, Interior Contractor Surat, Modular Furniture Surat and Carpenter Contractor Surat because they need a team that can execute multiple furniture categories under one scope. Virat Furniture & Interior Contractor has 16+ years of experience and serves VIP Road quickly from Adajan. We can work with homeowners directly or coordinate with interior designers, architects and builders. Whether the project is near RahulRaj Mall, Piplod, Vesu, Bhimrad, New City Light or connecting roads, our team is available for site visits and furniture estimates. Our goal is to deliver long-lasting furniture work that improves storage, comfort and property value.</p>
-    </section>
-
-    <section class="seo-area" id="furniture-work-althan">
-      <h2>Furniture Work in Althan</h2>
-      <p>Althan Surat has grown quickly as a residential and commercial hub, with many new apartments, family homes and office spaces needing custom furniture. Virat Furniture & Interior Contractor provides furniture work in Althan for 3 BHK flats, 4 BHK homes, villas, shops, offices and renovation projects. We create modular kitchens, wardrobes, beds, TV units, study tables, dressing units, shoe racks, pooja units, storage cabinets, wall panels and commercial furniture based on exact site dimensions. Althan homes often require smart planning because room sizes, balcony connections, utility spaces and kitchen layouts vary widely from building to building. Our team measures carefully and discusses daily use before finalizing furniture details.</p>
-      <p>For Althan furniture work, clients usually want a balance of cost, finish and long-term durability. We explain material options such as plywood, laminate, acrylic, veneer, hardware brands, edge finishes and storage accessories so the final quote is transparent. A modular kitchen may need moisture-resistant planning, a wardrobe may need lofts and drawer sections, a bed may need hydraulic storage, and a TV unit may need concealed wiring and display shelves. We bring 16+ years of Surat experience to these decisions, helping homeowners avoid mistakes that can affect daily convenience later. We also coordinate with electricians, painters, glass teams and countertop vendors where needed.</p>
-      <p>If you are searching for Furniture Contractor Althan, Furniture Work Surat, Interior Contractor Surat, Modular Furniture Surat or Wardrobe Contractor Surat, Virat Furniture & Interior Contractor can provide a site visit and practical estimate. Our Adajan-based team serves Althan, Bhimrad, VIP Road, New City Light and Vesu with reliable scheduling. We work for homeowners, builders, architects and commercial clients who need furniture that fits correctly, lasts well and looks consistent with the overall interior. From a single wardrobe to full-house furniture, our Althan service is designed for clean execution, useful storage and dependable handover.</p>
-    </section>
-
-    <section id="why" class="band">
-      <p class="eyebrow">Trust Factors</p>
-      <h2>Why Choose Virat Furniture</h2>
-      <div class="card-grid">
-        <article class="card"><h3>16+ Years Experience</h3><p>Deep local experience in furniture work, modular furniture and interior contracting across Surat.</p></article>
-        <article class="card"><h3>In-House Execution</h3><p>Measurement, carpentry, finishing and installation are handled by our experienced team.</p></article>
-        <article class="card"><h3>Local Area Reach</h3><p>Fast service for Adajan, Vesu, Pal, City Light, Piplod, VIP Road, Althan and nearby areas.</p></article>
-      </div>
-    </section>
-
-    <section id="projects">
-      <p class="eyebrow">Portfolio</p>
-      <h2>Recent Furniture Projects</h2>
-      <div class="card-grid">
-        <article class="card"><h3>3 BHK Furniture Work in Vesu</h3><p>Modular kitchen, wardrobes, TV unit, beds and utility storage for a modern apartment.</p><a href="projects.html">See projects</a></article>
-        <article class="card"><h3>Villa Furniture on Dumas Road</h3><p>Custom bedroom furniture, living room wall units and storage designed for a luxury villa.</p><a href="projects.html">See projects</a></article>
-        <article class="card"><h3>Commercial Furniture in Adajan</h3><p>Durable counters, cabinets and display furniture planned for daily business use.</p><a href="projects.html">See projects</a></article>
-      </div>
-    </section>
-
-    <section id="testimonials" class="band">
-      <p class="eyebrow">Reviews</p>
-      <h2>Client Testimonials</h2>
-      <div class="card-grid">
-        <blockquote class="card">"Virat Furniture completed our 3 BHK furniture work in Vesu with good planning and clean fitting."<cite>- Homeowner, Vesu Surat</cite></blockquote>
-        <blockquote class="card">"Reliable team for wardrobes, kitchen and TV unit work. The measurements and finishing were accurate."<cite>- Client, Adajan Surat</cite></blockquote>
-        <blockquote class="card">"They handled our commercial furniture project on time and coordinated well with our designer."<cite>- Business Owner, Piplod Surat</cite></blockquote>
-      </div>
-    </section>
-
-    <section id="blog">
-      <p class="eyebrow">Blog SEO Strategy</p>
-      <h2>Blog</h2>
-      <div class="blog-list">
-        <a href="blog.html#best-furniture-contractor-surat">Best Furniture Contractor in Surat</a>
-        <a href="blog.html#cost-3bhk-furniture-work-surat">Cost of 3 BHK Furniture Work in Surat</a>
-        <a href="blog.html#modular-kitchen-design-ideas">Modular Kitchen Design Ideas</a>
-        <a href="blog.html#latest-wardrobe-designs">Latest Wardrobe Designs</a>
-        <a href="blog.html#tv-unit-design-trends">TV Unit Design Trends</a>
-        <a href="blog.html#interior-design-tips-apartments">Interior Design Tips for Apartments</a>
-        <a href="blog.html#furniture-ideas-luxury-villas">Furniture Ideas for Luxury Villas</a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div>
-        <p class="eyebrow">Contact Us</p>
-        <h2>Contact Us</h2>
-        <p>Call Virat Furniture & Interior Contractor for site visits, measurements and furniture quotations in Surat.</p>
-        <p><strong>Phone:</strong> <a href="tel:+919725713944">09725713944</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919725713944" rel="noopener">Message on WhatsApp</a></p>
-        <p><strong>Email:</strong> <a href="mailto:service@viratfurniture.com">service@viratfurniture.com</a></p>
-        <p><strong>Address:</strong> Wood Square, 244, Subhash Chandra Bose Marg, TGB, Adajan Gam, Adajan, Surat, Gujarat 395009</p>
-      </div>
-      <iframe title="Virat Furniture & Interior Contractor Google Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Wood%20Square%2C%20244%2C%20Subhash%20Chandra%20Bose%20Marg%2C%20TGB%2C%20Adajan%20Gam%2C%20Adajan%2C%20Surat%2C%20Gujarat%20395009&output=embed"></iframe>
-    </section>
-
-    <section id="faq" class="band">
-      <p class="eyebrow">FAQ</p>
-      <h2>Frequently Asked Questions</h2>
-      <details><summary>What is the cost of furniture work in Surat?</summary><p>Cost depends on measurements, material, finish, hardware and scope. Call 09725713944 for a site visit and detailed quotation.</p></details>
-      <details><summary>Do you provide 3 BHK furniture work?</summary><p>Yes, we provide complete 3 BHK furniture work including kitchen, wardrobes, TV unit, beds and storage.</p></details>
-      <details><summary>Do you provide modular kitchen services?</summary><p>Yes, we provide modular kitchen planning, manufacturing and installation in Surat.</p></details>
-      <details><summary>Which areas of Surat do you serve?</summary><p>We serve Vesu, Adajan, Pal, City Light, Piplod, VIP Road, Althan, Bhimrad, Jahangirpura, Dumas Road, Gaurav Path, Athwa and nearby Surat areas.</p></details>
-      <details><summary>How much experience do you have?</summary><p>We have 16+ years of furniture and interior contracting experience in Surat.</p></details>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <strong>Virat Furniture & Interior Contractor</strong>
-      <p>Furniture Contractor Surat, Interior Contractor Surat, Furniture Work Surat, Modular Furniture Surat, Carpenter Contractor Surat.</p>
-      <p>Serving Vesu, Adajan, Pal, City Light, Piplod, VIP Road, Althan, Bhimrad, Jahangirpura, Dumas Road, Gaurav Path, Athwa, Surat.</p>
     </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="areas-we-serve.html">Areas We Serve</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Us</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar" role="region" aria-label="Key statistics">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="12">0</div>
+      <div class="stat-label">Commercial Buildings</div>
     </div>
-  </footer>
-  <div class="sticky-actions"><a href="tel:+919725713944">Call</a><a href="https://wa.me/919725713944" rel="noopener">WhatsApp</a></div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="16">0</div>
+      <div class="stat-label">Team Members</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="16" data-suffix="+">0</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="500" data-suffix="+">0</div>
+      <div class="stat-label">Happy Families</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="section-inner">
+    <span class="section-tag reveal">What We Do</span>
+    <h2 class="section-h2 reveal" id="services-heading">Complete Home Fit-Outs for Every Budget</h2>
+    <p class="section-sub reveal">Whether it's a compact 3BHK or a sprawling 5BHK bungalow, we design &amp; build furniture that fits your space perfectly — down to the last centimetre.</p>
+
+    <div class="services-grid">
+      <article class="svc-card reveal">
+        <span class="svc-badge">Most Popular</span>
+        <span class="svc-icon">🏠</span>
+        <div class="svc-title">3 BHK Apartment</div>
+        <div class="svc-subtitle">Full Modular Fit-Out</div>
+        <p class="svc-desc">Complete modular furniture for kitchen, 2 bedrooms, living area, and all storage solutions. Designed to maximize every corner of your apartment.</p>
+      </article>
+      <article class="svc-card reveal">
+        <span class="svc-badge">Premium</span>
+        <span class="svc-icon">🏡</span>
+        <div class="svc-title">4 BHK Residence</div>
+        <div class="svc-subtitle">Full Customisation</div>
+        <p class="svc-desc">Larger homes with kids' rooms, master suites, study units, and premium finishes. Every piece crafted to match your family's style and storage needs.</p>
+      </article>
+      <article class="svc-card reveal">
+        <span class="svc-badge">Luxury</span>
+        <span class="svc-icon">🏰</span>
+        <div class="svc-title">5 BHK Bungalow</div>
+        <div class="svc-subtitle">High-End Bungalow</div>
+        <p class="svc-desc">Rich wood textures, custom designs, and luxury hardware for discerning clients. When only the finest materials and craftsmanship will do.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" aria-labelledby="work-heading">
+  <div class="section-inner">
+    <span class="section-tag reveal">Our Craft</span>
+    <h2 class="section-h2 reveal" id="work-heading">Everything From Bedroom to Gate</h2>
+    <p class="section-sub reveal">We handle all types of custom furniture — handcrafted with seasoned wood, premium hardware, and finishes that last decades.</p>
+
+    <div class="work-grid">
+      <div class="work-item reveal">
+        <div class="work-icon">🛏</div>
+        <div class="work-name">Beds & Cots</div>
+        <div class="work-note">King, Queen, Single — all custom sizes</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🚪</div>
+        <div class="work-name">Almari & Wardrobes</div>
+        <div class="work-note">Sliding, hinged, walk-in units</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🏠</div>
+        <div class="work-name">Main Gates</div>
+        <div class="work-note">Wooden & MS gates, modern styles</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🍳</div>
+        <div class="work-name">Modular Kitchens</div>
+        <div class="work-note">L-shape, U-shape, island kitchens</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">📚</div>
+        <div class="work-name">Study & Office</div>
+        <div class="work-note">Study tables, bookshelves, desks</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🗄</div>
+        <div class="work-name">Storage Units</div>
+        <div class="work-note">Lofts, drawers, under-stair storage</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🪑</div>
+        <div class="work-name">Living Furniture</div>
+        <div class="work-note">TV units, showcases, sofas</div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">🛁</div>
+        <div class="work-name">Bathroom Vanity</div>
+        <div class="work-note">Vanity cabinets &amp; mirror units</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas" aria-labelledby="areas-heading">
+  <div class="section-inner">
+    <span class="section-tag reveal">We Serve</span>
+    <h2 class="section-h2 reveal" id="areas-heading">Premium Areas in Surat</h2>
+    <p class="section-sub reveal">We focus exclusively on Surat's top residential neighbourhoods — ensuring faster delivery, better site visits, and dedicated service for your project.</p>
+
+    <div class="areas-flex reveal">
+      <div class="area-tag">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 3.8 5 11 5 11s5-7.2 5-11c0-2.8-2.2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+        Vesu
+      </div>
+      <div class="area-tag">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 3.8 5 11 5 11s5-7.2 5-11c0-2.8-2.2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+        Gaurav Path Road
+      </div>
+      <div class="area-tag">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 3.8 5 11 5 11s5-7.2 5-11c0-2.8-2.2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+        Adajan
+      </div>
+      <div class="area-tag">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 3.8 5 11 5 11s5-7.2 5-11c0-2.8-2.2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+        Pal Gam
+      </div>
+      <div class="area-tag">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 3.8 5 11 5 11s5-7.2 5-11c0-2.8-2.2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+        Pal
+      </div>
+    </div>
+
+    <div class="areas-note reveal">
+      <strong style="color:var(--walnut)">Why these areas?</strong> Our workshop is located in Adajan — close proximity means faster delivery, easier site visits, and the best quality control on every project we take on.
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" aria-labelledby="why-heading">
+  <div class="section-inner">
+    <span class="section-tag reveal">Why Virat Furniture</span>
+    <h2 class="section-h2 reveal" id="why-heading">The Difference is in the Details</h2>
+
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="why-num">16+</div>
+        <div class="why-title">Years of Experience</div>
+        <p class="why-desc">Over a decade and a half of crafting furniture for Surat homes — we know what works and what lasts.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">16</div>
+        <div class="why-title">Expert Team Members</div>
+        <p class="why-desc">Skilled carpenters, designers, and installation specialists — every project gets dedicated hands-on attention.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">100%</div>
+        <div class="why-title">Custom Made</div>
+        <p class="why-desc">No catalogue items. Every piece is designed and built to your exact measurements, style, and requirements.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">5★</div>
+        <div class="why-title">Client Satisfaction</div>
+        <p class="why-desc">Families across Vesu, Adajan and Pal trust us to transform their homes. Your satisfaction is our final finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="section-inner">
+    <span class="section-tag reveal" style="background:rgba(184,134,11,0.15); color:var(--gold-light);">Get In Touch</span>
+    <h2 class="section-h2 reveal" id="contact-heading">Let's Build Something Beautiful</h2>
+    <p class="section-sub reveal">Tell us about your project and we'll get back to you within 24 hours with a free site visit and estimate.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-row">
+          <div class="contact-ico">📞</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-val"><a href="tel:09725713944">097257 13944</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val"><a href="mailto:service@viratfurniture.com">service@viratfurniture.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-val">Wood Square, 244, Subhash Chandra Bose Marg, TGB, Adajan Gam, Adajan, Surat – 395009</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">🕐</div>
+          <div>
+            <div class="contact-label">Working Hours</div>
+            <div class="contact-val">Mon – Sat: 9:00 AM – 7:00 PM<br/>Sunday: By Appointment</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <h3>Request a Free Quote</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="name" placeholder="Rahul Shah" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone Number</label>
+            <input type="tel" id="fphone" name="phone" placeholder="9876543210" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fservice">Type of Project</label>
+          <select id="fservice" name="service">
+            <option value="">Select your project type</option>
+            <option value="3bhk">3 BHK Fit-Out</option>
+            <option value="4bhk">4 BHK Fit-Out</option>
+            <option value="5bhk">5 BHK / Bungalow</option>
+            <option value="kitchen">Modular Kitchen</option>
+            <option value="bedroom">Bedroom (Bed + Almari)</option>
+            <option value="gate">Gate / Entrance</option>
+            <option value="office">Office / Commercial</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Tell us more (optional)</label>
+          <textarea id="fmsg" name="message" placeholder="E.g. 3BHK in Adajan, need modular kitchen and 2 bedrooms done..."></textarea>
+        </div>
+        <button type="button" class="form-submit" onclick="handleSubmit()">Send Enquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-logo">Virat<span>Furniture</span></div>
+  <p style="color:rgba(255,255,255,0.3);font-size:0.85rem;margin-top:0.4rem;">by Shubham Sahani · Adajan, Surat</p>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#areas">Areas</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p class="footer-copy">
+    © 2024 Virat Furniture. All rights reserved.<br/>
+    Wood Square, 244 Subhash Chandra Bose Marg, Adajan Gam, Surat – 395009<br/>
+    <a href="tel:09725713944" style="color:rgba(255,255,255,0.2);text-decoration:none;">097257 13944</a> · 
+    <a href="mailto:service@viratfurniture.com" style="color:rgba(255,255,255,0.2);text-decoration:none;">service@viratfurniture.com</a>
+  </p>
+</footer>
+
+<!-- FABs -->
+<a href="https://wa.me/919725713944?text=Hi%20Virat%20Furniture%2C%20I%20need%20a%20quote%20for%20my%20home%20furniture." id="wa-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+  // ── HAMBURGER ──
+  const ham = document.getElementById('hamburger');
+  const mNav = document.getElementById('mobile-nav');
+  const mClose = document.getElementById('mobile-close');
+
+  ham.addEventListener('click', () => mNav.classList.add('open'));
+  mClose.addEventListener('click', () => mNav.classList.remove('open'));
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mNav.classList.remove('open')));
+
+  // ── SCROLL REVEAL ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i * 0.06) + 's';
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── COUNTER ANIMATION ──
+  const counters = document.querySelectorAll('[data-target]');
+  const cObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        const target = +el.dataset.target;
+        const suffix = el.dataset.suffix || '';
+        let current = 0;
+        const step = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current + suffix;
+          if (current >= target) clearInterval(timer);
+        }, 35);
+        cObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => cObserver.observe(el));
+
+  // ── BACK TO TOP ──
+  const btn = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 400);
+  });
+
+  // ── FORM SUBMIT ──
+  function handleSubmit() {
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    if (!name || !phone) {
+      alert('Please enter your name and phone number.');
+      return;
+    }
+    const service = document.getElementById('fservice').value;
+    const msg = document.getElementById('fmsg').value.trim();
+    const wa = `Hi Virat Furniture! My name is ${name}. Phone: ${phone}.${service ? ' Project: ' + service + '.' : ''}${msg ? ' Details: ' + msg : ''}`;
+    window.open(`https://wa.me/919725713944?text=${encodeURIComponent(wa)}`, '_blank');
+  }
+
+  // ── NAV ACTIVE STATE ──
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--gold)' : '';
+      a.style.fontWeight = a.getAttribute('href') === `#${current}` ? '600' : '';
+    });
+  });
+</script>
 </body>
 </html>
