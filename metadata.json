@@ -1,6 +1,0 @@
-{
-  "name": "Virat Furniture",
-  "description": "Premium modular furniture, custom beds, almari, kitchens, and gates in Surat.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
