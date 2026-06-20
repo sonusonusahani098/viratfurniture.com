@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://viratfurniture.com/sitemap.xml
