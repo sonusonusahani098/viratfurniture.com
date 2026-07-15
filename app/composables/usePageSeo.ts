@@ -32,7 +32,7 @@ export function usePageSeo(opts: PageSeoOptions) {
     link: [{ rel: 'canonical', href: canonical }],
   })
 
-  defineOgImageComponent('Default', {
+  defineOgImage('Default', {
     title: opts.ogTitle || opts.title,
   })
 

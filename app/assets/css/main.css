@@ -34,15 +34,15 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal-600 px-6 py-3.5 text-sm font-semibold text-white shadow-premium transition-all duration-300 hover:bg-royal-700 hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal-600 px-6 py-3.5 text-sm font-semibold text-white shadow-premium transition-all duration-300 hover:bg-royal-700 hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2;
   }
 
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-6 py-3.5 text-sm font-semibold text-white shadow-premium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-6 py-3.5 text-sm font-semibold text-white shadow-premium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-royal-500 focus-visible:ring-offset-2;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-royal-600 px-6 py-3.5 text-sm font-semibold text-royal-700 transition-all duration-300 hover:bg-royal-600 hover:text-white hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-royal-600 px-6 py-3.5 text-sm font-semibold text-royal-700 transition-all duration-300 hover:bg-royal-600 hover:text-white hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2;
   }
 
   .eyebrow {
@@ -102,9 +102,33 @@
   .prose-content h3 a {
     @apply text-inherit no-underline;
   }
+
+  .marquee {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .marquee-track {
+    @apply flex w-max;
+    animation: marquee 48s linear infinite;
+  }
+
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes fadeUp {
   0% { opacity: 0; transform: translateY(24px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .animate-float, .animate-float-slow { animation: none; }
+  html { scroll-behavior: auto; }
 }

@@ -7,12 +7,12 @@ usePageSeo({
 })
 
 const categories = [
-  { name: 'Apartments & Flats', image: '/images/placeholders/category-apartment.svg' },
-  { name: 'Villas & Bungalows', image: '/images/placeholders/hero-living-room.svg' },
-  { name: 'Office & Commercial', image: '/images/placeholders/category-office.svg' },
-  { name: 'Hotels & Restaurants', image: '/images/placeholders/category-hotel.svg' },
-  { name: 'Builder Projects', image: '/images/placeholders/category-builder-projects.svg' },
-  { name: 'High-Rise Towers', image: '/images/placeholders/service-generic.svg' },
+  { name: 'Apartments & Flats', image: '/images/art/living-room.svg' },
+  { name: 'Villas & Bungalows', image: '/images/art/hotel.svg' },
+  { name: 'Office & Commercial', image: '/images/art/office.svg' },
+  { name: 'Hotels & Restaurants', image: '/images/art/restaurant.svg' },
+  { name: 'Builder Projects', image: '/images/art/building.svg' },
+  { name: 'High-Rise Towers', image: '/images/art/building.svg' },
 ]
 </script>
 

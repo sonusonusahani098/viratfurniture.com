@@ -3,18 +3,37 @@ import { business } from '~/utils/site-data'
 
 const heroEl = ref<HTMLElement | null>(null)
 const offsetY = ref(0)
+const mx = ref(0)
+const my = ref(0)
 
 function onScroll() {
-  if (!heroEl.value) return
   offsetY.value = window.scrollY
 }
 
-onMounted(() => window.addEventListener('scroll', onScroll, { passive: true }))
+function onPointerMove(e: PointerEvent) {
+  if (e.pointerType === 'touch' || !heroEl.value) return
+  const rect = heroEl.value.getBoundingClientRect()
+  mx.value = (e.clientX - rect.left) / rect.width - 0.5
+  my.value = (e.clientY - rect.top) / rect.height - 0.5
+}
+
+function layer(depth: number) {
+  return { transform: `translate3d(${(mx.value * depth).toFixed(2)}px, ${(my.value * depth).toFixed(2)}px, 0)` }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+})
 onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 </script>
 
 <template>
-  <section ref="heroEl" class="relative overflow-hidden bg-gradient-to-b from-royal-50 via-white to-white pt-14 pb-20 sm:pt-20 sm:pb-28">
+  <section
+    ref="heroEl"
+    class="relative overflow-hidden bg-gradient-to-b from-royal-50 via-white to-white pt-14 pb-20 sm:pt-20 sm:pb-28"
+    @pointermove="onPointerMove"
+  >
     <div
       class="pointer-events-none absolute -top-32 right-[-10%] h-[32rem] w-[32rem] rounded-full bg-royal-100 blur-3xl"
       :style="{ transform: `translateY(${offsetY * 0.15}px)` }"
@@ -25,7 +44,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     />
     <div class="pointer-events-none absolute inset-0 bg-grain" />
 
-    <div class="container-px relative mx-auto grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+    <div class="container-px relative mx-auto grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
       <div>
         <div class="reveal is-visible inline-flex items-center gap-2 rounded-full border border-gold-200 bg-gold-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold-700">
           <span class="h-1.5 w-1.5 rounded-full bg-gold-500" />
@@ -44,6 +63,17 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         <p class="reveal is-visible mt-6 max-w-lg text-lg leading-relaxed text-royal-700" style="animation-delay: 0.1s">
           Custom furniture, modular interiors, wardrobes and office setups — designed, manufactured and installed by a 15-member craftsmen team. From single apartments to 21-floor towers, we build furniture that lasts.
         </p>
+
+        <div class="reveal is-visible mt-8 overflow-hidden rounded-xl2 border border-white shadow-premium lg:hidden" style="animation-delay: 0.15s">
+          <img
+            src="/images/art/living-room.svg"
+            alt="Custom living room furniture crafted by Virat Furniture, Surat"
+            class="aspect-[16/9] w-full object-cover"
+            width="960"
+            height="540"
+            fetchpriority="high"
+          >
+        </div>
 
         <div class="reveal is-visible mt-9 flex flex-wrap items-center gap-4" style="animation-delay: 0.2s">
           <a :href="`tel:${business.phoneRaw}`" class="btn-primary">
@@ -64,12 +94,32 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         </div>
       </div>
 
-      <div class="relative hidden lg:block">
-        <div class="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-xl3 border border-white shadow-premium">
-          <img src="/images/placeholders/hero-living-room.svg" alt="Custom living room furniture by Virat Furniture, Surat" class="h-full w-full object-cover" width="640" height="800">
+      <div class="relative hidden min-h-[560px] lg:block">
+        <div class="pointer-events-none absolute right-16 top-0 h-[26rem] w-[26rem] rounded-full bg-gradient-to-br from-royal-100 via-gold-50 to-transparent" :style="layer(-6)" />
+
+        <div class="absolute left-6 top-6 w-[62%] overflow-hidden rounded-xl3 border-4 border-white shadow-premium" :style="layer(10)">
+          <img
+            src="/images/art/living-room.svg"
+            alt="Custom living room furniture crafted by Virat Furniture, Surat"
+            class="aspect-[4/5] w-full object-cover"
+            width="640"
+            height="800"
+            fetchpriority="high"
+          >
         </div>
 
-        <div class="glass-card animate-float absolute -left-10 top-10 w-52 p-4">
+        <div class="absolute bottom-2 right-0 w-[46%] overflow-hidden rounded-xl3 border-4 border-white shadow-premium" :style="layer(20)">
+          <img
+            src="/images/art/bedroom.svg"
+            alt="Bedroom furniture set designed by Virat Furniture"
+            class="aspect-square w-full object-cover"
+            width="520"
+            height="520"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="glass-card animate-float absolute -left-4 top-2 w-52 p-4" :style="layer(26)">
           <div class="flex items-center gap-3">
             <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-royal-600 text-white">
               <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
@@ -81,7 +131,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           </div>
         </div>
 
-        <div class="glass-card animate-float-slow absolute -right-8 bottom-16 w-56 p-4">
+        <div class="glass-card animate-float-slow absolute right-4 top-24 w-56 p-4" :style="layer(16)">
           <div class="flex items-center gap-3">
             <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold-500 text-white">
               <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
@@ -93,7 +143,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           </div>
         </div>
 
-        <div class="glass-card animate-float absolute bottom-[-2.5rem] left-1/2 w-48 -translate-x-1/2 p-4" style="animation-delay: 1.5s">
+        <div class="glass-card animate-float absolute bottom-10 left-10 w-48 p-4" :style="{ animationDelay: '1.5s', ...layer(22) }">
           <div class="flex items-center gap-3">
             <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-wood-600 text-white">
               <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>

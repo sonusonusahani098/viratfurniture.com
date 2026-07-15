@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Wooden TV unit with slat wall panel illustration — Virat Furniture">
+<defs>
+  <linearGradient id="tv-wall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F6F1E7"/><stop offset="1" stop-color="#e4dfd5"/>
+  </linearGradient>
+  <linearGradient id="tv-floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#D9BE9E"/><stop offset="1" stop-color="#c0a585"/>
+  </linearGradient>
+  <linearGradient id="tv-sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#CFE0F7"/><stop offset="1" stop-color="#F2F8FF"/>
+  </linearGradient>
+  <linearGradient id="tv-shaft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="tv-woodv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#C39B6E"/><stop offset="1" stop-color="#A67848"/>
+  </linearGradient>
+  <linearGradient id="tv-woodh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#C39B6E"/><stop offset="0.5" stop-color="#A67848"/><stop offset="1" stop-color="#6F4526"/>
+  </linearGradient>
+  <linearGradient id="tv-royalv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2F58C4"/><stop offset="1" stop-color="#24448F"/>
+  </linearGradient>
+  <linearGradient id="tv-royald" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#24448F"/><stop offset="1" stop-color="#18306B"/>
+  </linearGradient>
+  <linearGradient id="tv-goldv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E4C56C"/><stop offset="1" stop-color="#C9A227"/>
+  </linearGradient>
+  <linearGradient id="tv-mirror" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#C7D6EA"/><stop offset="0.55" stop-color="#EDF4FC"/><stop offset="1" stop-color="#C2D2E8"/>
+  </linearGradient>
+  <linearGradient id="tv-screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1D2A4A"/><stop offset="1" stop-color="#0E1730"/>
+  </linearGradient>
+  <linearGradient id="tv-metal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E6EAF0"/><stop offset="1" stop-color="#AEB8C6"/>
+  </linearGradient>
+  <radialGradient id="tv-glow" cx="0.5" cy="0.45" r="0.55">
+    <stop offset="0" stop-color="#FFE9B0" stop-opacity="0.95"/><stop offset="1" stop-color="#FFE9B0" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="tv-ambient" cx="0.32" cy="0.18" r="0.9">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.20"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="tv-vig" cx="0.5" cy="0.5" r="0.72">
+    <stop offset="0.78" stop-color="#1B2B52" stop-opacity="0"/><stop offset="1" stop-color="#1B2B52" stop-opacity="0.10"/>
+  </radialGradient>
+  <filter id="tv-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9"/></filter>
+  <filter id="tv-soft2" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<rect width="1200" height="560" fill="url(#tv-wall)"/>
+<rect y="560" width="1200" height="240" fill="url(#tv-floor)"/>
+<rect y="550" width="1200" height="10" fill="#FFFFFF" opacity="0.35"/>
+<line x1="0" y1="604" x2="1200" y2="604" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="558" x2="260" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="558" x2="600" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="558" x2="940" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="650" x2="1200" y2="650" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="604" x2="260" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="604" x2="600" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="604" x2="940" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="696" x2="1200" y2="696" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="650" x2="260" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="650" x2="600" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="650" x2="940" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="742" x2="1200" y2="742" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="696" x2="260" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="696" x2="600" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="696" x2="940" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="788" x2="1200" y2="788" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="742" x2="260" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="742" x2="600" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="742" x2="940" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/>
+
+<g>
+  <polygon points="72,400 268,400 430,798 -30,798" fill="url(#tv-shaft)" opacity="0.4"/>
+  <rect x="60" y="110" width="220" height="290" rx="10" fill="#6F4526"/>
+  <rect x="72" y="122" width="196" height="266" rx="4" fill="url(#tv-sky)"/>
+  <line x1="170" y1="122" x2="170" y2="388" stroke="#6F4526" stroke-width="9"/>
+  <line x1="72" y1="255" x2="268" y2="255" stroke="#6F4526" stroke-width="9"/>
+  <path d="M80 170 q 73.33333333333333 -26 180 -10" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="7" fill="none"/>
+  <rect x="50" y="400" width="240" height="13" rx="6" fill="#C39B6E"/>
+  <rect x="26" y="92" width="36" height="360" rx="14" fill="#E9E0CE" opacity="0.95"/>
+  <path d="M34 104 v330 M48 104 v330" stroke="#1B2B52" stroke-opacity="0.08" stroke-width="4"/>
+</g>
+<g><rect x="368" y="68" width="484" height="384" rx="12" fill="#1B2B52" opacity="0.05"/><rect x="380" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="406" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="432" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="458" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="484" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="510" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="536" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="562" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="588" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="614" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="640" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="666" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="692" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="718" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="744" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="770" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/><rect x="796" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="1"/><rect x="822" y="80" width="15" height="360" rx="6" fill="url(#tv-woodv)" opacity="0.86"/></g>
+<g>
+  <rect x="450" y="164" width="318" height="183.36" rx="10" fill="#0B1226"/>
+  <rect x="456" y="170" width="306" height="171.36" rx="5" fill="url(#tv-screen)"/>
+  <polygon points="470,180 596.76,180 470,276.2432" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="736" cy="323.36" r="4" fill="#C9A227"/>
+</g>
+<rect x="470" y="366" width="280" height="16" rx="8" fill="#12182B"/>
+<ellipse cx="610" cy="700" rx="260" ry="20" fill="#1B2B52" opacity="0.16" filter="url(#tv-soft)"/>
+<rect x="390" y="560" width="440" height="104" rx="14" fill="url(#tv-woodh)"/>
+<line x1="530" y1="568" x2="530" y2="656" stroke="#1B2B52" stroke-opacity="0.18" stroke-width="4"/>
+<line x1="690" y1="568" x2="690" y2="656" stroke="#1B2B52" stroke-opacity="0.18" stroke-width="4"/>
+<rect x="428" y="606" width="64" height="7" rx="3.5" fill="#E4C56C"/><rect x="428" y="606" width="64" height="3" rx="1.5" fill="#FFF6DA" opacity="0.8"/><rect x="578" y="606" width="64" height="7" rx="3.5" fill="#E4C56C"/><rect x="578" y="606" width="64" height="3" rx="1.5" fill="#FFF6DA" opacity="0.8"/>
+<rect x="700" y="576" width="56" height="34" rx="4" fill="#24448F"/><rect x="704" y="614" width="70" height="10" rx="4" fill="#D8E2D2"/>
+<rect x="376" y="544" width="468" height="18" rx="8" fill="#d2aa7d"/>
+<g transform="translate(806,496) scale(1)">
+  <path d="M12 44 h40 l-5 30 h-30 z" fill="#B4633C"/>
+  <path d="M32 44 C28 24 16 18 8 14 C22 16 30 26 32 34 C34 18 28 10 32 0 C40 12 38 26 36 36 C40 24 50 18 58 16 C48 26 38 32 34 44 Z" fill="#5F8D5F"/>
+</g>
+<path d="M416 520 q10 -22 24 0 l-3 24 h-18 z" fill="url(#tv-goldv)"/>
+<g>
+  <rect x="890" y="140" width="120" height="150" rx="6" fill="#FFFFFF" stroke="#6F4526" stroke-width="7"/>
+  <path d="M906.8 245 q21.599999999999998 -45 43.199999999999996 0 q19.2 -63 43.199999999999996 0" fill="none" stroke="#5F8D5F" stroke-width="6" stroke-linecap="round"/><circle cx="974" cy="185" r="8.4" fill="#C9A227"/>
+</g>
+<g transform="translate(1010,380) scale(1.05)">
+  <ellipse cx="60" cy="256" rx="52" ry="12" fill="#1B2B52" opacity="0.14" filter="url(#tv-soft)"/>
+  <path d="M38 200 h44 l-7 52 h-30 z" fill="#B4633C"/>
+  <path d="M38 200 h44 l-2 12 h-40 z" fill="#95441d"/>
+  <path d="M60 198 C58 150 40 130 18 108 C48 116 60 140 62 160 C64 120 52 92 60 58 C74 96 70 130 68 156 C76 128 96 112 112 104 C96 130 78 150 66 198 Z" fill="#5F8D5F"/>
+  <path d="M60 198 C52 160 30 150 14 146 C40 148 56 166 60 180 M62 198 C70 158 94 146 108 142 C88 148 70 168 66 186" fill="#46704A" opacity="0.8"/>
+</g>
+<g>
+  <rect x="360" y="690" width="500" height="84" rx="22" fill="#E9E0CE"/>
+  <rect x="374" y="702" width="472" height="60" rx="14" fill="none" stroke="#C9A227" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="390" y="714" width="440" height="36" rx="10" fill="none" stroke="#1B2B52" stroke-opacity="0.08" stroke-width="2"/>
+</g>
+<g transform="translate(250,330)">
+  <ellipse cx="42" cy="296" rx="44" ry="10" fill="#1B2B52" opacity="0.13" filter="url(#tv-soft)"/>
+  <rect x="38" y="90" width="7" height="200" fill="#55351C"/>
+  <ellipse cx="42" cy="292" rx="34" ry="9" fill="#55351C"/>
+  <path d="M10 90 h64 l-10 -58 h-44 z" fill="url(#tv-goldv)"/>
+  <ellipse cx="42" cy="92" rx="30" ry="8" fill="#FFE9B0" opacity="0.85"/>
+  <circle cx="42" cy="96" r="72" fill="url(#tv-glow)" opacity="0.5"/>
+</g>
+
+<rect width="1200" height="800" fill="url(#tv-ambient)"/>
+<rect width="1200" height="800" fill="url(#tv-vig)"/>
+</svg>

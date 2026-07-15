@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Wooden pooja unit illustration — Virat Furniture">
+<defs>
+  <linearGradient id="pj-wall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F8EFDC"/><stop offset="1" stop-color="#e6ddca"/>
+  </linearGradient>
+  <linearGradient id="pj-floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#D9BE9E"/><stop offset="1" stop-color="#c0a585"/>
+  </linearGradient>
+  <linearGradient id="pj-sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#CFE0F7"/><stop offset="1" stop-color="#F2F8FF"/>
+  </linearGradient>
+  <linearGradient id="pj-shaft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="pj-woodv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#C39B6E"/><stop offset="1" stop-color="#A67848"/>
+  </linearGradient>
+  <linearGradient id="pj-woodh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#C39B6E"/><stop offset="0.5" stop-color="#A67848"/><stop offset="1" stop-color="#6F4526"/>
+  </linearGradient>
+  <linearGradient id="pj-royalv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2F58C4"/><stop offset="1" stop-color="#24448F"/>
+  </linearGradient>
+  <linearGradient id="pj-royald" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#24448F"/><stop offset="1" stop-color="#18306B"/>
+  </linearGradient>
+  <linearGradient id="pj-goldv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E4C56C"/><stop offset="1" stop-color="#C9A227"/>
+  </linearGradient>
+  <linearGradient id="pj-mirror" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#C7D6EA"/><stop offset="0.55" stop-color="#EDF4FC"/><stop offset="1" stop-color="#C2D2E8"/>
+  </linearGradient>
+  <linearGradient id="pj-screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1D2A4A"/><stop offset="1" stop-color="#0E1730"/>
+  </linearGradient>
+  <linearGradient id="pj-metal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E6EAF0"/><stop offset="1" stop-color="#AEB8C6"/>
+  </linearGradient>
+  <radialGradient id="pj-glow" cx="0.5" cy="0.45" r="0.55">
+    <stop offset="0" stop-color="#FFE9B0" stop-opacity="0.95"/><stop offset="1" stop-color="#FFE9B0" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="pj-ambient" cx="0.32" cy="0.18" r="0.9">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.20"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="pj-vig" cx="0.5" cy="0.5" r="0.72">
+    <stop offset="0.78" stop-color="#1B2B52" stop-opacity="0"/><stop offset="1" stop-color="#1B2B52" stop-opacity="0.10"/>
+  </radialGradient>
+  <filter id="pj-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9"/></filter>
+  <filter id="pj-soft2" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<rect width="1200" height="560" fill="url(#pj-wall)"/>
+<rect y="560" width="1200" height="240" fill="url(#pj-floor)"/>
+<rect y="550" width="1200" height="10" fill="#FFFFFF" opacity="0.35"/>
+<line x1="0" y1="604" x2="1200" y2="604" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="558" x2="260" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="558" x2="600" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="558" x2="940" y2="604" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="650" x2="1200" y2="650" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="604" x2="260" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="604" x2="600" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="604" x2="940" y2="650" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="696" x2="1200" y2="696" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="650" x2="260" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="650" x2="600" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="650" x2="940" y2="696" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="742" x2="1200" y2="742" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="696" x2="260" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="696" x2="600" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="696" x2="940" y2="742" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="0" y1="788" x2="1200" y2="788" stroke="#1B2B52" stroke-opacity="0.06" stroke-width="2"/><line x1="260" y1="742" x2="260" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="600" y1="742" x2="600" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/><line x1="940" y1="742" x2="940" y2="788" stroke="#1B2B52" stroke-opacity="0.05" stroke-width="2"/>
+
+<g transform="translate(440,120) scale(1)">
+  <ellipse cx="160" cy="468" rx="168" ry="16" fill="#1B2B52" opacity="0.16" filter="url(#pj-soft)"/>
+  <path d="M20 440 v-300 a140 140 0 0 1 280 0 v300 z" fill="#FBEED2"/>
+  <path d="M20 440 v-300 a140 140 0 0 1 280 0 v300" fill="none" stroke="url(#pj-woodh)" stroke-width="18"/>
+  <path d="M42 440 v-286 a118 118 0 0 1 236 0 v286" fill="none" stroke="#E4C56C" stroke-width="5" opacity="0.8"/>
+  <circle cx="30" cy="96" r="7" fill="#F2C14E"/><circle cx="48.57142857142857" cy="79.97849275514537" r="7" fill="#E8913C"/><circle cx="67.14285714285714" cy="64.76037078353582" r="7" fill="#F2C14E"/><circle cx="85.71428571428571" cy="51.10873426617119" r="7" fill="#E8913C"/><circle cx="104.28571428571428" cy="39.70813326230186" r="7" fill="#F2C14E"/><circle cx="122.85714285714286" cy="31.130241511025815" r="7" fill="#E8913C"/><circle cx="141.42857142857142" cy="25.8051903229087" r="7" fill="#F2C14E"/><circle cx="160" cy="24" r="7" fill="#E8913C"/><circle cx="178.57142857142856" cy="25.8051903229087" r="7" fill="#F2C14E"/><circle cx="197.14285714285717" cy="31.130241511025815" r="7" fill="#E8913C"/><circle cx="215.71428571428572" cy="39.70813326230184" r="7" fill="#F2C14E"/><circle cx="234.28571428571428" cy="51.10873426617118" r="7" fill="#E8913C"/><circle cx="252.85714285714283" cy="64.7603707835358" r="7" fill="#F2C14E"/><circle cx="271.42857142857144" cy="79.97849275514535" r="7" fill="#E8913C"/><circle cx="290" cy="95.99999999999999" r="7" fill="#F2C14E"/>
+  <line x1="86" y1="52" x2="86" y2="112" stroke="#6F4526" stroke-width="3"/>
+  <path d="M74 112 a12 14 0 0 1 24 0 z" fill="url(#pj-goldv)"/><circle cx="86" cy="118" r="3.5" fill="#C9A227"/>
+  <line x1="234" y1="52" x2="234" y2="112" stroke="#6F4526" stroke-width="3"/>
+  <path d="M222 112 a12 14 0 0 1 24 0 z" fill="url(#pj-goldv)"/><circle cx="234" cy="118" r="3.5" fill="#C9A227"/>
+  <circle cx="160" cy="250" r="86" fill="url(#pj-glow)" opacity="0.8"/>
+  <rect x="60" y="286" width="200" height="14" rx="6" fill="url(#pj-woodv)"/>
+  <path d="M138 268 a22 10 0 0 0 44 0 z" fill="url(#pj-goldv)"/>
+  <path d="M160 240 c8 12 6 22 0 28 c-6 -6 -8 -16 0 -28z" fill="#F2801F"/>
+  <path d="M160 246 c4 8 3 14 0 18 c-3 -4 -4 -10 0 -18z" fill="#FFD979"/>
+  <rect x="40" y="300" width="240" height="140" rx="10" fill="url(#pj-woodh)"/>
+  <line x1="160" y1="308" x2="160" y2="432" stroke="#1B2B52" stroke-opacity="0.2" stroke-width="4"/>
+  <rect x="60" y="320" width="80" height="100" rx="8" fill="none" stroke="#1B2B52" stroke-opacity="0.16" stroke-width="4"/>
+  <rect x="180" y="320" width="80" height="100" rx="8" fill="none" stroke="#1B2B52" stroke-opacity="0.16" stroke-width="4"/>
+  <circle cx="146" cy="370" r="6" fill="#E4C56C"/><circle cx="144.5" cy="368.5" r="2" fill="#FFF6DA"/><circle cx="174" cy="370" r="6" fill="#E4C56C"/><circle cx="172.5" cy="368.5" r="2" fill="#FFF6DA"/>
+</g>
+<g transform="translate(200,360) scale(1.05)">
+  <ellipse cx="60" cy="256" rx="52" ry="12" fill="#1B2B52" opacity="0.14" filter="url(#pj-soft)"/>
+  <path d="M38 200 h44 l-7 52 h-30 z" fill="#B4633C"/>
+  <path d="M38 200 h44 l-2 12 h-40 z" fill="#95441d"/>
+  <path d="M60 198 C58 150 40 130 18 108 C48 116 60 140 62 160 C64 120 52 92 60 58 C74 96 70 130 68 156 C76 128 96 112 112 104 C96 130 78 150 66 198 Z" fill="#5F8D5F"/>
+  <path d="M60 198 C52 160 30 150 14 146 C40 148 56 166 60 180 M62 198 C70 158 94 146 108 142 C88 148 70 168 66 186" fill="#46704A" opacity="0.8"/>
+</g>
+<g transform="translate(900,360) scale(1.05)">
+  <ellipse cx="60" cy="256" rx="52" ry="12" fill="#1B2B52" opacity="0.14" filter="url(#pj-soft)"/>
+  <path d="M38 200 h44 l-7 52 h-30 z" fill="#B4633C"/>
+  <path d="M38 200 h44 l-2 12 h-40 z" fill="#95441d"/>
+  <path d="M60 198 C58 150 40 130 18 108 C48 116 60 140 62 160 C64 120 52 92 60 58 C74 96 70 130 68 156 C76 128 96 112 112 104 C96 130 78 150 66 198 Z" fill="#5F8D5F"/>
+  <path d="M60 198 C52 160 30 150 14 146 C40 148 56 166 60 180 M62 198 C70 158 94 146 108 142 C88 148 70 168 66 186" fill="#46704A" opacity="0.8"/>
+</g>
+<g>
+  <rect x="420" y="690" width="360" height="80" rx="22" fill="#F1E3C2"/>
+  <rect x="434" y="702" width="332" height="56" rx="14" fill="none" stroke="#C9A227" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="450" y="714" width="300" height="32" rx="10" fill="none" stroke="#1B2B52" stroke-opacity="0.08" stroke-width="2"/>
+</g>
+<g>
+  <line x1="280" y1="0" x2="280" y2="130" stroke="#1B2B52" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M246 164 a34 34 0 0 1 68 0 z" fill="url(#pj-goldv)" transform="rotate(180 280 147)"/>
+  <circle cx="280" cy="156" r="9" fill="#FFE9B0"/>
+  <circle cx="280" cy="160" r="52" fill="url(#pj-glow)" opacity="0.55"/>
+</g>
+<g>
+  <line x1="920" y1="0" x2="920" y2="130" stroke="#1B2B52" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M886 164 a34 34 0 0 1 68 0 z" fill="url(#pj-goldv)" transform="rotate(180 920 147)"/>
+  <circle cx="920" cy="156" r="9" fill="#FFE9B0"/>
+  <circle cx="920" cy="160" r="52" fill="url(#pj-glow)" opacity="0.55"/>
+</g>
+
+<rect width="1200" height="800" fill="url(#pj-ambient)"/>
+<rect width="1200" height="800" fill="url(#pj-vig)"/>
+</svg>

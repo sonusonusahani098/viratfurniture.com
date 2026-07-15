@@ -8,6 +8,7 @@ const year = new Date().getFullYear()
 
 <template>
   <footer class="relative overflow-hidden bg-royal-900 text-royal-100">
+    <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600" />
     <div class="pointer-events-none absolute inset-0 bg-grain" />
     <div class="container-px section-py relative mx-auto">
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5">

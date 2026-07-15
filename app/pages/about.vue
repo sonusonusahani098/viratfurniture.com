@@ -50,7 +50,7 @@ const timeline = [
           </div>
         </div>
         <div class="overflow-hidden rounded-xl3 border border-white shadow-premium">
-          <img src="/images/placeholders/about-workshop.svg" alt="Virat Furniture workshop team at work in Surat" class="aspect-[4/3] w-full object-cover" width="800" height="600">
+          <img src="/images/art/workshop.svg" alt="Virat Furniture workshop with carpentry tools in Surat" class="aspect-[4/3] w-full object-cover" width="800" height="600">
         </div>
       </div>
     </section>

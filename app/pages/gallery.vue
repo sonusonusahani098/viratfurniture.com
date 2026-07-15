@@ -7,22 +7,22 @@ usePageSeo({
 })
 
 const items = [
-  { name: 'Living Room Furniture', image: '/images/placeholders/hero-living-room.svg' },
-  { name: 'Bedroom Furniture', image: '/images/placeholders/hero-bedroom.svg' },
-  { name: 'Wooden Wardrobes', image: '/images/placeholders/category-wardrobe.svg' },
-  { name: 'Sliding Wardrobes', image: '/images/placeholders/category-sliding-wardrobe.svg' },
-  { name: 'Modern Beds', image: '/images/placeholders/category-modern-bed.svg' },
-  { name: 'TV Units', image: '/images/placeholders/category-tv-unit.svg' },
-  { name: 'Modular Kitchens', image: '/images/placeholders/category-kitchen.svg' },
-  { name: 'Office Furniture', image: '/images/placeholders/category-office.svg' },
-  { name: 'Workstations', image: '/images/placeholders/category-workstation.svg' },
-  { name: 'Reception Counters', image: '/images/placeholders/category-reception.svg' },
-  { name: 'Luxury Wooden Furniture', image: '/images/placeholders/category-luxury-wood.svg' },
-  { name: 'Study Tables', image: '/images/placeholders/category-study-table.svg' },
-  { name: 'Bookshelves', image: '/images/placeholders/category-bookshelf.svg' },
-  { name: 'Pooja Units', image: '/images/placeholders/category-pooja-unit.svg' },
-  { name: 'Wall Panels', image: '/images/placeholders/category-wall-panel.svg' },
-  { name: 'Wooden Ceilings', image: '/images/placeholders/category-wooden-ceiling.svg' },
+  { name: 'Living Room Furniture', image: '/images/art/living-room.svg' },
+  { name: 'Bedroom Furniture', image: '/images/art/bedroom.svg' },
+  { name: 'Wooden Wardrobes', image: '/images/art/wardrobe.svg' },
+  { name: 'Sliding Wardrobes', image: '/images/art/sliding-wardrobe.svg' },
+  { name: 'Modern Beds', image: '/images/art/modern-bed.svg' },
+  { name: 'TV Units', image: '/images/art/tv-unit.svg' },
+  { name: 'Modular Kitchens', image: '/images/art/kitchen.svg' },
+  { name: 'Office Furniture', image: '/images/art/office.svg' },
+  { name: 'Reception Counters', image: '/images/art/reception.svg' },
+  { name: 'Dining Tables', image: '/images/art/dining.svg' },
+  { name: 'Study Tables', image: '/images/art/study.svg' },
+  { name: 'Bookshelves', image: '/images/art/bookshelf.svg' },
+  { name: 'Pooja Units', image: '/images/art/pooja.svg' },
+  { name: 'Wooden Wall & Ceiling Work', image: '/images/art/woodwork.svg' },
+  { name: 'Storage Cabinets', image: '/images/art/storage.svg' },
+  { name: 'Hotel & Restaurant Furniture', image: '/images/art/restaurant.svg' },
 ]
 </script>
 

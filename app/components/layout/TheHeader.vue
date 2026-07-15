@@ -29,6 +29,15 @@ watch(() => route.fullPath, () => {
   isMobileOpen.value = false
   openMega.value = null
 })
+
+function toggleMega(name: string) {
+  openMega.value = openMega.value === name ? null : name
+}
+
+function isActive(to: string) {
+  if (to === '/') return route.path === '/'
+  return route.path === to || route.path.startsWith(`${to}/`)
+}
 </script>
 
 <template>
@@ -53,17 +62,22 @@ watch(() => route.fullPath, () => {
 
       <nav class="hidden items-center gap-1 lg:flex" @mouseleave="openMega = null">
         <div
-          v-for="item in mainNav.slice(0, 1)"
+          v-for="item in mainNav.slice(0, 2)"
           :key="item.to"
           class="relative"
         >
-          <NuxtLink :to="item.to" class="rounded-full px-4 py-2 text-sm font-medium text-royal-800 transition hover:bg-royal-50">{{ item.name }}</NuxtLink>
+          <NuxtLink :to="item.to" class="whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition hover:bg-royal-50" :class="isActive(item.to) ? 'bg-royal-50 text-royal-600' : 'text-royal-800'">{{ item.name }}</NuxtLink>
         </div>
 
         <div class="relative" @mouseenter="openMega = 'services'">
-          <button class="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-royal-800 transition hover:bg-royal-50" :class="{ 'bg-royal-50': openMega === 'services' }">
+          <button
+            class="flex items-center gap-1 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition hover:bg-royal-50"
+            :class="[openMega === 'services' ? 'bg-royal-50' : '', isActive('/services') ? 'text-royal-600' : 'text-royal-800']"
+            :aria-expanded="openMega === 'services'"
+            @click="toggleMega('services')"
+          >
             Services
-            <svg viewBox="0 0 20 20" class="h-4 w-4"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200" :class="{ 'rotate-180': openMega === 'services' }"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </button>
           <Transition
             enter-active-class="transition duration-200 ease-out"
@@ -93,9 +107,14 @@ watch(() => route.fullPath, () => {
         </div>
 
         <div class="relative" @mouseenter="openMega = 'areas'">
-          <button class="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-royal-800 transition hover:bg-royal-50" :class="{ 'bg-royal-50': openMega === 'areas' }">
+          <button
+            class="flex items-center gap-1 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition hover:bg-royal-50"
+            :class="[openMega === 'areas' ? 'bg-royal-50' : '', isActive('/areas') ? 'text-royal-600' : 'text-royal-800']"
+            :aria-expanded="openMega === 'areas'"
+            @click="toggleMega('areas')"
+          >
             Areas We Serve
-            <svg viewBox="0 0 20 20" class="h-4 w-4"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200" :class="{ 'rotate-180': openMega === 'areas' }"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </button>
           <Transition
             enter-active-class="transition duration-200 ease-out"
@@ -121,7 +140,8 @@ watch(() => route.fullPath, () => {
           v-for="item in mainNav.slice(4)"
           :key="item.to"
           :to="item.to"
-          class="rounded-full px-4 py-2 text-sm font-medium text-royal-800 transition hover:bg-royal-50"
+          class="whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition hover:bg-royal-50"
+          :class="isActive(item.to) ? 'bg-royal-50 text-royal-600' : 'text-royal-800'"
         >
           {{ item.name }}
         </NuxtLink>
