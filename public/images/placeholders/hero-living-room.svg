@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="Living Room Furniture placeholder">
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#182F70" />
+      <stop offset="100%" stop-color="#2F58C4" />
+    </linearGradient>
+    <pattern id="p0" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.06" />
+    </pattern>
+  </defs>
+  <rect width="960" height="600" fill="url(#g0)" />
+  <rect width="960" height="600" fill="url(#p0)" />
+  <rect width="960" height="600" fill="#0A1530" fill-opacity="0.08" />
+  <g transform="translate(420, 222)" fill="none" stroke="#F4E7B8" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 70v20a6 6 0 0 0 6 6h4v-8h60v8h4a6 6 0 0 0 6-6V70" />
+    <path d="M14 56a10 10 0 0 1 10-10h72a10 10 0 0 1 10 10v18H14z" />
+    <path d="M24 56v-8a6 6 0 0 1 6-6h60a6 6 0 0 1 6 6v8" />
+    <path d="M20 74h80" />
+  </g>
+  <text x="480" y="566" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#FFFFFF" fill-opacity="0.92" letter-spacing="0.5">Living Room Furniture</text>
+  <text x="480" y="586" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F4E7B8" fill-opacity="0.85" letter-spacing="2">VIRAT FURNITURE — IMAGE PLACEHOLDER</text>
+</svg>

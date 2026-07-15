@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="Virat Furniture Showroom placeholder">
+  <defs>
+    <linearGradient id="g27" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#182F70" />
+      <stop offset="100%" stop-color="#2F58C4" />
+    </linearGradient>
+    <pattern id="p27" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.06" />
+    </pattern>
+  </defs>
+  <rect width="960" height="600" fill="url(#g27)" />
+  <rect width="960" height="600" fill="url(#p27)" />
+  <rect width="960" height="600" fill="#0A1530" fill-opacity="0.08" />
+  <g transform="translate(420, 222)" fill="none" stroke="#F4E7B8" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="30" y="10" width="60" height="98" rx="3" />
+    <circle cx="76" cy="60" r="2.5" fill="currentColor" stroke="none" />
+    <path d="M30 34h60M30 84h60" />
+  </g>
+  <text x="480" y="566" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#FFFFFF" fill-opacity="0.92" letter-spacing="0.5">Virat Furniture Showroom</text>
+  <text x="480" y="586" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F4E7B8" fill-opacity="0.85" letter-spacing="2">VIRAT FURNITURE — IMAGE PLACEHOLDER</text>
+</svg>

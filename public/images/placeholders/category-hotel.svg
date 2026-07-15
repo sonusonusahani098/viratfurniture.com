@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img" aria-label="Hotel & Restaurant Furniture placeholder">
+  <defs>
+    <linearGradient id="g22" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101F44" />
+      <stop offset="100%" stop-color="#A9840F" />
+    </linearGradient>
+    <pattern id="p22" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.06" />
+    </pattern>
+  </defs>
+  <rect width="640" height="800" fill="url(#g22)" />
+  <rect width="640" height="800" fill="url(#p22)" />
+  <rect width="640" height="800" fill="#0A1530" fill-opacity="0.08" />
+  <g transform="translate(260, 322)" fill="none" stroke="#F4E7B8" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="16" y="18" width="88" height="88" rx="4" />
+    <path d="M16 46h88" />
+    <path d="M32 46V32M52 46V32M72 46V32M92 46V32" />
+    <path d="M32 106V60h20v46M68 106V70a12 12 0 0 1 24 0v36" />
+  </g>
+  <text x="320" y="766" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#FFFFFF" fill-opacity="0.92" letter-spacing="0.5">Hotel & Restaurant Furniture</text>
+  <text x="320" y="786" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F4E7B8" fill-opacity="0.85" letter-spacing="2">VIRAT FURNITURE — IMAGE PLACEHOLDER</text>
+</svg>
