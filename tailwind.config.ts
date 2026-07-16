@@ -59,8 +59,8 @@ export default <Partial<Config>>{
         },
       },
       fontFamily: {
-        display: ['"Fraunces"', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 2px 8px -2px rgba(16, 31, 68, 0.08), 0 8px 24px -8px rgba(16, 31, 68, 0.10)',

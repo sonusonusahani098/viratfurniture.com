@@ -20,8 +20,8 @@ export default defineContentConfig({
       source: 'services/*.md',
       schema: z.object({
         seo: seoSchema,
-        heroImage: z.string(),
-        heroImageAlt: z.string(),
+        heroImage: z.string().optional(),
+        heroImageAlt: z.string().optional(),
         shortDescription: z.string(),
         relatedServices: z.array(z.string()).default([]),
         relatedAreas: z.array(z.string()).default([]),
@@ -33,8 +33,8 @@ export default defineContentConfig({
       source: 'areas/*.md',
       schema: z.object({
         seo: seoSchema,
-        heroImage: z.string(),
-        heroImageAlt: z.string(),
+        heroImage: z.string().optional(),
+        heroImageAlt: z.string().optional(),
         shortDescription: z.string(),
         landmarks: z.array(z.string()).default([]),
         relatedServices: z.array(z.string()).default([]),
@@ -47,8 +47,8 @@ export default defineContentConfig({
       source: 'blog/*.md',
       schema: z.object({
         seo: seoSchema,
-        heroImage: z.string(),
-        heroImageAlt: z.string(),
+        heroImage: z.string().optional(),
+        heroImageAlt: z.string().optional(),
         shortDescription: z.string(),
         category: z.string(),
         author: z.string().default('Virat Furniture Team'),

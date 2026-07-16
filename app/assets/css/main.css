@@ -49,6 +49,30 @@
     @apply inline-flex items-center gap-2 rounded-full bg-gold-50 border border-gold-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold-700;
   }
 
+  .kicker {
+    @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600;
+  }
+
+  .kicker::before {
+    content: '';
+    @apply h-px w-8 bg-gold-500;
+  }
+
+  .kicker-center::after {
+    content: '';
+    @apply h-px w-8 bg-gold-500;
+  }
+
+  .pinstripes {
+    background-image: repeating-linear-gradient(115deg, rgba(228, 197, 108, 0.06) 0 2px, transparent 2px 28px);
+  }
+
+  .underline-gold {
+    @apply bg-gradient-to-r from-gold-400 to-gold-300 bg-no-repeat;
+    background-size: 100% 0.16em;
+    background-position: 0 92%;
+  }
+
   .reveal {
     opacity: 0;
   }

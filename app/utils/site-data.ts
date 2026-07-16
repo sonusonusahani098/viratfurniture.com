@@ -99,6 +99,17 @@ export const areas: AreaNavItem[] = [
   { name: 'Gaurav Path Road', slug: 'gaurav-path-road' },
 ]
 
+export const galleryCategories = [
+  'Wardrobes',
+  'Bedrooms',
+  'Living Rooms & TV Units',
+  'Modular Kitchens',
+  'Office & Commercial',
+  'Wooden Work & Ceilings',
+  'Repair & Renovation',
+  'Builder Projects',
+]
+
 export const blogCategories = [
   'Furniture Tips',
   'Furniture Repair',

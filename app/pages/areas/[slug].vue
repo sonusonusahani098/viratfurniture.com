@@ -62,14 +62,16 @@ useSchemaOrg([
       </div>
     </section>
 
-    <section class="section-py">
-      <div class="container-px mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+    <section class="relative overflow-hidden bg-gradient-to-b from-[#F7F4EC] to-white section-py">
+      <div class="pointer-events-none absolute -top-32 right-[-10%] h-[26rem] w-[26rem] rounded-full bg-gold-100/60 blur-3xl" />
+      <div class="pointer-events-none absolute inset-0 bg-grain" />
+      <div class="container-px relative mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div class="reveal is-visible">
-          <p class="eyebrow">Serving {{ navEntry?.name }}, Surat</p>
-          <h1 class="mt-5 font-display text-3xl font-bold text-royal-900 sm:text-4xl lg:text-[2.6rem]">{{ page.title }}</h1>
-          <p class="mt-5 text-lg leading-relaxed text-royal-600">{{ page.shortDescription }}</p>
+          <p class="kicker">Serving {{ navEntry?.name }}, Surat</p>
+          <h1 class="mt-6 font-display text-3xl font-bold leading-tight text-royal-900 sm:text-4xl lg:text-[2.8rem]">{{ page.title }}</h1>
+          <p class="mt-5 max-w-xl text-lg leading-relaxed text-royal-600">{{ page.shortDescription }}</p>
           <div v-if="page.landmarks?.length" class="mt-6 flex flex-wrap gap-2">
-            <span v-for="l in page.landmarks" :key="l" class="rounded-full bg-royal-50 px-3 py-1.5 text-xs font-medium text-royal-700">
+            <span v-for="l in page.landmarks" :key="l" class="rounded-full border border-surface-400/60 bg-white px-3 py-1.5 text-xs font-medium text-royal-700">
               Near {{ l }}
             </span>
           </div>
@@ -78,8 +80,28 @@ useSchemaOrg([
             <NuxtLink to="/contact" class="btn-gold">Get Free Estimate</NuxtLink>
           </div>
         </div>
-        <div class="overflow-hidden rounded-xl3 border border-white shadow-premium">
-          <img :src="page.heroImage" :alt="page.heroImageAlt" class="aspect-[4/3] w-full object-cover" width="800" height="600">
+
+        <div class="pinstripes relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-royal-800 via-royal-900 to-[#0C1731] p-8 shadow-premium">
+          <div class="pointer-events-none absolute inset-0 bg-grain" />
+          <div class="relative flex items-center gap-4">
+            <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-gold-400/40 bg-white/5 text-gold-300">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></svg>
+            </span>
+            <p class="font-display text-xl italic text-gold-300">{{ navEntry?.name }} at a glance</p>
+          </div>
+          <ul class="relative mt-7 space-y-4 border-t border-white/10 pt-6 text-sm text-royal-100">
+            <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />Free site visits across {{ navEntry?.name }} — measurement and estimate at your doorstep</li>
+            <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />Furniture built in our Palanpur workshop and installed at your address</li>
+            <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />New furniture, repairs and renovation handled by the same in-house team</li>
+            <li class="flex gap-3"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />Serving homes, offices and builder projects here for over 20 years</li>
+          </ul>
+          <div class="relative mt-7 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wider text-royal-300">Working hours</p>
+              <p class="mt-0.5 text-sm text-white">Mon–Sat, 9 AM – 7 PM</p>
+            </div>
+            <a :href="business.whatsappLink(`Hi, I need furniture work in ${navEntry?.name || 'Surat'}.`)" target="_blank" rel="noopener" class="rounded-full bg-gold-500 px-4 py-2 text-xs font-semibold text-white transition hover:bg-gold-600">WhatsApp</a>
+          </div>
         </div>
       </div>
     </section>

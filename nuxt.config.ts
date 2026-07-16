@@ -48,6 +48,24 @@ export default defineNuxtConfig({
 
   sitemap: {
     sources: ['/api/__sitemap__/urls'],
+    exclude: ['/admin'],
+  },
+
+  robots: {
+    disallow: ['/admin'],
+  },
+
+  runtimeConfig: {
+    adminPassword: '',
+    cloudinary: {
+      cloudName: '',
+      apiKey: '',
+      apiSecret: '',
+      folder: 'virat-furniture/gallery',
+    },
+    public: {
+      cloudinaryCloudName: '',
+    },
   },
 
   schemaOrg: {
@@ -96,6 +114,12 @@ export default defineNuxtConfig({
       crawlLinks: false,
       routes: ['/', '/sitemap.xml'],
       failOnError: false,
+    },
+    storage: {
+      data: { driver: 'fs', base: './.data/storage' },
+    },
+    devStorage: {
+      data: { driver: 'fs', base: './.data/storage' },
     },
   },
 

@@ -1,66 +1,69 @@
 <script setup lang="ts">
 import { business } from '~/utils/site-data'
 
-const bannerEl = ref<HTMLElement | null>(null)
-const shift = ref(0)
-
-function onScroll() {
-  if (!bannerEl.value) return
-  const rect = bannerEl.value.getBoundingClientRect()
-  const progress = (rect.top + rect.height / 2 - window.innerHeight / 2) / window.innerHeight
-  shift.value = Math.max(-1, Math.min(1, progress)) * 46
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', onScroll, { passive: true })
-  onScroll()
-})
-onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
+const towers = [
+  { floors: 12, h: 'h-28' },
+  { floors: 15, h: 'h-36' },
+  { floors: 18, h: 'h-44' },
+  { floors: 21, h: 'h-52' },
+]
 </script>
 
 <template>
-  <section ref="bannerEl" class="relative overflow-hidden" aria-label="Builder and high-rise furniture work">
-    <img
-      src="/images/art/building.svg"
-      alt="High-rise residential towers in Surat where Virat Furniture installs builder furniture"
-      loading="lazy"
-      class="absolute inset-0 h-[120%] w-full scale-110 object-cover will-change-transform"
-      :style="{ transform: `translateY(${shift.toFixed(1)}px) scale(1.12)` }"
-      width="1200"
-      height="800"
-    >
-    <div class="absolute inset-0 bg-gradient-to-r from-royal-900/90 via-royal-900/70 to-royal-900/40" />
+  <section class="pinstripes relative overflow-hidden bg-gradient-to-br from-[#101F44] via-royal-900 to-[#0C1731]" aria-label="Builder and high-rise furniture work">
+    <div class="pointer-events-none absolute inset-0 bg-grain" />
+    <div class="pointer-events-none absolute -left-24 top-0 h-96 w-96 rounded-full bg-royal-600/20 blur-3xl" />
+    <div class="pointer-events-none absolute -bottom-24 right-0 h-80 w-80 rounded-full bg-gold-500/10 blur-3xl" />
 
-    <div class="container-px relative mx-auto py-20 md:py-28">
+    <div class="container-px relative mx-auto grid grid-cols-1 items-center gap-14 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr]">
       <div class="max-w-xl">
-        <p class="reveal inline-flex items-center gap-2 rounded-full border border-gold-400/40 bg-royal-900/40 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold-300 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-gold-400" />
-          Builder &amp; Tower Projects
-        </p>
-        <h2 class="reveal mt-5 font-display text-3xl font-semibold leading-tight text-white sm:text-4xl">
-          From a Single Wardrobe to a 21-Floor Tower
+        <p class="kicker !text-gold-400">Builder &amp; Tower Projects</p>
+        <h2 class="mt-6 font-display text-3xl font-bold leading-tight text-white sm:text-[2.6rem]">
+          From a single wardrobe to a
+          <em class="italic text-gold-300">21-floor tower</em>
         </h2>
-        <p class="reveal mt-4 text-royal-100" style="animation-delay: 0.1s">
+        <p class="reveal mt-5 text-[17px] leading-relaxed text-royal-100/90">
           We work directly with builders and interior contractors on Surat's high-rise residential projects — repeating consistent designs across dozens of flats, coordinated around site timelines and possession dates.
         </p>
-        <div class="reveal mt-8 flex flex-wrap gap-4" style="animation-delay: 0.2s">
-          <NuxtLink to="/services/builder-furniture-work" class="btn-gold">Builder Furniture Work</NuxtLink>
-          <a :href="`tel:${business.phoneRaw}`" class="btn-outline !border-white/40 !text-white hover:!bg-white hover:!text-royal-900">Discuss Your Project</a>
+        <div class="reveal mt-9 flex flex-wrap gap-4" style="animation-delay: 0.15s">
+          <NuxtLink to="/services/builder-furniture-work" class="btn-gold !px-7">Builder Furniture Work</NuxtLink>
+          <a :href="`tel:${business.phoneRaw}`" class="btn-outline !border-white/40 !px-7 !text-white hover:!border-white hover:!bg-white hover:!text-royal-900">Discuss Your Project</a>
         </div>
-        <dl class="reveal mt-10 grid max-w-md grid-cols-3 gap-6" style="animation-delay: 0.3s">
+
+        <dl class="reveal mt-11 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-8" style="animation-delay: 0.25s">
           <div>
-            <dt class="text-xs font-medium uppercase tracking-wide text-royal-200">Tower Heights</dt>
-            <dd class="mt-1 font-display text-2xl font-bold text-white">12–21 <span class="text-sm font-medium text-gold-300">floors</span></dd>
+            <dd class="font-display text-2xl font-semibold text-white">100<span class="text-base text-gold-400">%</span></dd>
+            <dt class="mt-1 text-[11px] font-medium uppercase tracking-wider text-royal-300">In-house team</dt>
           </div>
           <div>
-            <dt class="text-xs font-medium uppercase tracking-wide text-royal-200">Experience</dt>
-            <dd class="mt-1 font-display text-2xl font-bold text-white">20+ <span class="text-sm font-medium text-gold-300">years</span></dd>
+            <dd class="font-display text-2xl font-semibold text-white">20<span class="text-base text-gold-400">+</span></dd>
+            <dt class="mt-1 text-[11px] font-medium uppercase tracking-wider text-royal-300">Years on site</dt>
           </div>
           <div>
-            <dt class="text-xs font-medium uppercase tracking-wide text-royal-200">In-House Team</dt>
-            <dd class="mt-1 font-display text-2xl font-bold text-white">15 <span class="text-sm font-medium text-gold-300">craftsmen</span></dd>
+            <dd class="font-display text-2xl font-semibold text-white">4</dd>
+            <dt class="mt-1 text-[11px] font-medium uppercase tracking-wider text-royal-300">Tower heights fitted</dt>
           </div>
         </dl>
+      </div>
+
+      <div class="reveal relative mx-auto w-full max-w-md" style="animation-delay: 0.2s">
+        <div class="flex items-end justify-center gap-5 border-b border-white/15 pb-0">
+          <div v-for="t in towers" :key="t.floors" class="flex w-16 flex-col items-center gap-3 sm:w-20">
+            <div
+              class="relative w-full overflow-hidden rounded-t-lg border border-white/10 bg-white/5"
+              :class="t.h"
+              :style="{ backgroundImage: 'radial-gradient(rgba(244,231,184,0.55) 1.2px, transparent 1.4px)', backgroundSize: '9px 12px', backgroundPosition: '4px 6px' }"
+            >
+              <span class="absolute inset-x-0 top-0 h-0.5 bg-gold-400/80" />
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 flex items-end justify-center gap-5">
+          <p v-for="t in towers" :key="t.floors" class="w-16 text-center text-xs font-semibold uppercase tracking-wider text-royal-200 sm:w-20">
+            <span class="font-display text-lg font-semibold text-gold-300">{{ t.floors }}</span> floors
+          </p>
+        </div>
+        <p class="mt-6 text-center text-xs uppercase tracking-[0.22em] text-royal-300/80">Residential towers we've furnished across Surat</p>
       </div>
     </div>
   </section>

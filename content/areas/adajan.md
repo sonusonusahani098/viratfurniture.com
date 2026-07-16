@@ -1,14 +1,11 @@
 ---
 title: Furniture Maker in Adajan, Surat
-heroImage: /images/art/building.svg
-heroImageAlt: Custom furniture project by Virat Furniture in Adajan, Surat
 shortDescription: Custom furniture, wardrobes and modular interiors for Adajan homes and societies, designed on-site and built by our own team.
 seo:
   title: Furniture Maker in Adajan, Surat | Virat Furniture
   metaDescription: Custom furniture, wardrobes and modular kitchens for homes in Adajan, Surat. Free site visit and estimate from Virat Furniture, serving Adajan for over 20 years.
   ogTitle: Furniture Services in Adajan, Surat — Virat Furniture
   ogDescription: Wardrobes, modular furniture and office fit-outs for Adajan homes and businesses, built and installed by a local Surat team.
-  ogImage: /images/art/building.svg
 landmarks:
   - VIP Road
   - Tapi Riverfront

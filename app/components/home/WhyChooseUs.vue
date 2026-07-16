@@ -11,8 +11,8 @@ const points = [
     icon: 'M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M11 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75',
   },
   {
-    title: 'Residential & Commercial Experience',
-    desc: 'Apartments, villas, bungalows, offices, shops, hotels and restaurants — we adapt to the scale and standards each project demands.',
+    title: 'Residential & Commercial',
+    desc: 'Apartments, villas, bungalows, offices, shops, hotels and restaurants — we adapt to the scale each project demands.',
     icon: 'M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6',
   },
   {
@@ -22,7 +22,7 @@ const points = [
   },
   {
     title: 'Quality Materials, Honest Pricing',
-    desc: 'We use durable timber and hardware suited to Surat\'s climate, and quote clearly before work begins — no hidden costs.',
+    desc: 'Durable timber and hardware suited to Surat\'s climate, quoted clearly before work begins — no hidden costs.',
     icon: 'M9 12l2 2 4-4M12 22c4.97-1.4 8-5.4 8-10V5l-8-3-8 3v7c0 4.6 3.03 8.6 8 10z',
   },
   {
@@ -34,26 +34,32 @@ const points = [
 </script>
 
 <template>
-  <section class="section-py bg-surface-200">
+  <section class="section-py bg-white">
     <div class="container-px mx-auto">
       <div class="reveal mx-auto max-w-2xl text-center">
-        <p class="eyebrow">Why Virat Furniture</p>
-        <h2 class="mt-5 font-display text-3xl font-semibold text-royal-900 sm:text-4xl">Built on Experience, Not Promises</h2>
-        <p class="mt-4 text-royal-600">Everything we do is grounded in two decades of real project work across Surat's homes and businesses.</p>
+        <p class="kicker kicker-center justify-center">Why Virat Furniture</p>
+        <h2 class="mt-6 font-display text-3xl font-bold text-royal-900 sm:text-[2.6rem] sm:leading-tight">
+          Built on experience, <em class="italic text-royal-600">not promises</em>
+        </h2>
+        <p class="mt-5 text-[17px] leading-relaxed text-royal-600">
+          Everything we do is grounded in two decades of real project work across Surat's homes and businesses.
+        </p>
       </div>
 
-      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="(p, i) in points"
           :key="p.title"
-          class="reveal group rounded-xl2 bg-white p-7 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-premium"
-          :style="{ animationDelay: `${(i % 3) * 0.1}s` }"
+          class="reveal group rounded-2xl border border-surface-300 bg-surface-100 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gold-300 hover:bg-white hover:shadow-premium"
+          :style="{ animationDelay: `${(i % 3) * 0.08}s` }"
         >
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-royal-50 text-royal-600 transition-colors group-hover:bg-royal-600 group-hover:text-white">
-            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path :d="p.icon" /></svg>
+          <div class="flex items-center gap-4">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-200 bg-white text-gold-600 transition-colors duration-300 group-hover:border-gold-500 group-hover:bg-gold-500 group-hover:text-white">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path :d="p.icon" /></svg>
+            </span>
+            <h3 class="font-display text-lg font-semibold leading-snug text-royal-900">{{ p.title }}</h3>
           </div>
-          <h3 class="mt-5 font-display text-lg font-semibold text-royal-900">{{ p.title }}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-royal-600">{{ p.desc }}</p>
+          <p class="mt-4 text-sm leading-relaxed text-royal-600">{{ p.desc }}</p>
         </div>
       </div>
     </div>

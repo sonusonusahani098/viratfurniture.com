@@ -29,10 +29,10 @@ useSchemaOrg([
   <div>
     <HomeHero />
     <HomeStatsBar />
-    <HomeShowcase />
     <HomeServicesOverview />
-    <HomeWhyChooseUs />
+    <HomeProcess />
     <HomeCraftBanner />
+    <HomeWhyChooseUs />
     <HomeAreasOverview />
     <HomeTestimonials />
     <HomeFaqSection />

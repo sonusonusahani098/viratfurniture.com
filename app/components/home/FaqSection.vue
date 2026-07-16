@@ -30,12 +30,15 @@ const faqs = [
 </script>
 
 <template>
-  <section class="section-py">
-    <div class="container-px mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+  <section class="relative section-py overflow-hidden bg-surface-200">
+    <div class="pointer-events-none absolute inset-0 bg-grain" />
+    <div class="container-px relative mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr]">
       <div class="reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2 class="mt-5 font-display text-3xl font-semibold text-royal-900 sm:text-4xl">Common Questions, Answered</h2>
-        <p class="mt-4 text-royal-600">Can't find what you're looking for?</p>
+        <p class="kicker">FAQ</p>
+        <h2 class="mt-6 font-display text-3xl font-bold text-royal-900 sm:text-[2.6rem] sm:leading-tight">
+          Common questions, <em class="italic text-royal-600">answered</em>
+        </h2>
+        <p class="mt-5 text-[17px] text-royal-600">Can't find what you're looking for?</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a :href="`tel:${business.phoneRaw}`" class="btn-outline !py-3">Call Us</a>
           <NuxtLink to="/contact" class="btn-primary !py-3">Ask a Question</NuxtLink>

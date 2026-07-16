@@ -33,11 +33,14 @@ const timeline = [
       </div>
     </section>
 
-    <section class="section-py">
-      <div class="container-px mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+    <section class="relative overflow-hidden bg-gradient-to-b from-[#F7F4EC] to-white section-py">
+      <div class="pointer-events-none absolute inset-0 bg-grain" />
+      <div class="container-px relative mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
         <div class="reveal is-visible">
-          <p class="eyebrow">About Virat Furniture</p>
-          <h1 class="mt-5 font-display text-4xl font-bold text-royal-900 sm:text-5xl">20 Years of Building Furniture for Surat</h1>
+          <p class="kicker">About Virat Furniture</p>
+          <h1 class="mt-6 font-display text-4xl font-bold leading-tight text-royal-900 sm:text-5xl">
+            Twenty years of building furniture for <em class="italic text-royal-600">Surat</em>
+          </h1>
           <p class="mt-6 text-lg leading-relaxed text-royal-600">
             Virat Furniture has spent over two decades designing, manufacturing and installing furniture for homes and businesses across Surat. What started as a small carpentry workshop has grown into a full in-house team of 15 craftsmen, handling everything from a single wardrobe to furniture for entire residential towers.
           </p>
@@ -49,8 +52,31 @@ const timeline = [
             <NuxtLink to="/services" class="btn-outline">View Our Services</NuxtLink>
           </div>
         </div>
-        <div class="overflow-hidden rounded-xl3 border border-white shadow-premium">
-          <img src="/images/art/workshop.svg" alt="Virat Furniture workshop with carpentry tools in Surat" class="aspect-[4/3] w-full object-cover" width="800" height="600">
+        <div class="pinstripes relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-royal-800 via-royal-900 to-[#0C1731] p-8 shadow-premium sm:p-10">
+          <div class="pointer-events-none absolute inset-0 bg-grain" />
+          <p class="relative font-display text-xl italic text-gold-300">The workshop, in numbers</p>
+          <div class="relative mt-3 h-px w-16 bg-gold-500/70" />
+          <dl class="relative mt-8 grid grid-cols-2 gap-x-6 gap-y-8">
+            <div>
+              <dd class="font-display text-4xl font-bold text-white">20<span class="text-2xl text-gold-400">+</span></dd>
+              <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-royal-300">Years in furniture making</dt>
+            </div>
+            <div>
+              <dd class="font-display text-4xl font-bold text-white">15</dd>
+              <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-royal-300">In-house craftsmen</dt>
+            </div>
+            <div>
+              <dd class="font-display text-4xl font-bold text-white">33</dd>
+              <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-royal-300">Surat areas served</dt>
+            </div>
+            <div>
+              <dd class="font-display text-4xl font-bold text-white">21<span class="text-2xl text-gold-400">F</span></dd>
+              <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-royal-300">Tallest tower fitted out</dt>
+            </div>
+          </dl>
+          <div class="relative mt-8 rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p class="text-sm leading-relaxed text-royal-100">One team handles your project end to end — measurement, manufacturing in our Palanpur workshop, delivery and installation.</p>
+          </div>
         </div>
       </div>
     </section>

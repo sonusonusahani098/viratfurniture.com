@@ -27,7 +27,7 @@ onMounted(() => {
   if (!el.value) return
   const observer = new IntersectionObserver(
     (entries) => {
-      if (entries[0].isIntersecting) {
+      if (entries[0]?.isIntersecting) {
         animate()
         observer.disconnect()
       }
@@ -39,8 +39,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="el" class="text-center">
-    <p class="font-display text-4xl font-bold text-white sm:text-5xl">{{ current }}{{ suffix }}</p>
-    <p class="mt-2 text-sm font-medium text-royal-200">{{ label }}</p>
+  <div ref="el" class="px-2 text-center">
+    <p class="font-display text-4xl font-bold text-royal-900 sm:text-5xl">
+      {{ current }}<span v-if="suffix" class="text-gold-500">{{ suffix }}</span>
+    </p>
+    <p class="mt-2 text-xs font-semibold uppercase tracking-wider text-royal-500">{{ label }}</p>
   </div>
 </template>

@@ -22,12 +22,14 @@ const sampleTestimonials = [
 </script>
 
 <template>
-  <section class="section-py bg-surface-200">
+  <section class="section-py bg-white">
     <div class="container-px mx-auto">
       <div class="reveal mx-auto max-w-2xl text-center">
-        <p class="eyebrow">Client Feedback</p>
-        <h2 class="mt-5 font-display text-3xl font-semibold text-royal-900 sm:text-4xl">What Clients Say</h2>
-        <p class="mt-4 text-royal-600">
+        <p class="kicker kicker-center justify-center">Client Feedback</p>
+        <h2 class="mt-6 font-display text-3xl font-bold text-royal-900 sm:text-[2.6rem] sm:leading-tight">
+          What clients <em class="italic text-royal-600">say</em>
+        </h2>
+        <p class="mt-5 text-[17px] leading-relaxed text-royal-600">
           This section is ready to display genuine client testimonials. The cards below are placeholders —
           add real feedback as projects are completed.
         </p>

@@ -1,14 +1,11 @@
 ---
 title: Custom Furniture in Surat
-heroImage: /images/art/workshop.svg
-heroImageAlt: Custom-built wooden furniture crafted by Virat Furniture in Surat
 shortDescription: Furniture designed around your room, not the other way around — built to measure by our own team of carpenters.
 seo:
   title: Custom Furniture in Surat | Virat Furniture
   metaDescription: Custom furniture maker in Surat with 20+ years experience. Virat Furniture designs and builds made-to-measure wardrobes, beds, TV units and more for homes and offices.
   ogTitle: Custom Furniture Manufacturing in Surat — Virat Furniture
   ogDescription: Made-to-measure furniture for Surat homes and businesses, designed and built in-house by a 15-member craftsmen team.
-  ogImage: /images/art/workshop.svg
 relatedServices:
   - modular-furniture
   - wooden-wardrobe

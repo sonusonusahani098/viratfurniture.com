@@ -1,40 +1,26 @@
 <script setup lang="ts">
-import { getServiceImage } from '~/utils/placeholder-map'
+import { getServiceIcon } from '~/utils/service-icons'
 
 defineProps<{
   name: string
   slug: string
   description?: string
 }>()
-
-const { target, style } = useTilt(5)
 </script>
 
 <template>
-  <div
-    ref="target"
-    :style="style"
-    class="group relative flex flex-col overflow-hidden rounded-xl2 border border-surface-300 bg-white shadow-soft transition-shadow duration-300 will-change-transform hover:shadow-premium"
-  >
+  <div class="group relative flex h-full flex-col rounded-2xl border border-surface-300 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-300 hover:shadow-premium">
     <NuxtLink :to="`/services/${slug}`" class="absolute inset-0 z-10" :aria-label="`${name} in Surat`" />
-    <div class="relative aspect-[4/3] overflow-hidden">
-      <img
-        :src="getServiceImage(slug)"
-        :alt="`${name} in Surat by Virat Furniture`"
-        loading="lazy"
-        class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-        width="640"
-        height="480"
-      >
-      <div class="absolute inset-0 bg-gradient-to-t from-royal-900/70 via-royal-900/0 to-transparent" />
-    </div>
-    <div class="flex flex-1 flex-col p-5">
-      <h3 class="font-display text-lg font-semibold text-royal-900 transition group-hover:text-royal-600">{{ name }}</h3>
-      <p v-if="description" class="mt-2 text-sm leading-relaxed text-royal-600 line-clamp-2">{{ description }}</p>
-      <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600">
-        Explore Service
-        <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M7 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    <div class="flex items-center gap-4">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-200 text-gold-600 transition-all duration-300 group-hover:border-gold-500 group-hover:bg-gold-500 group-hover:text-white">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path :d="getServiceIcon(slug)" /></svg>
       </span>
+      <h3 class="font-display text-lg font-semibold leading-snug text-royal-900 transition group-hover:text-royal-600">{{ name }}</h3>
     </div>
+    <p v-if="description" class="mt-3.5 flex-1 text-sm leading-relaxed text-royal-600">{{ description }}</p>
+    <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-royal-600 transition-colors group-hover:text-gold-600">
+      Explore Service
+      <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"><path d="M3 10h13M12 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </span>
   </div>
 </template>
