@@ -3,7 +3,7 @@
   // Build first (`npm run build` — the CF build env sets WORKERS_CI so Nitro
   // uses the cloudflare_module preset), then `npx wrangler deploy`.
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "viratfurniture-dev",
+  "name": "viratfurniture",
   "main": "./.output/server/index.mjs",
   "keep_vars": true,
   "compatibility_date": "2026-07-01",
