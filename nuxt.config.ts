@@ -3,18 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content',
-    '@nuxt/image',
-    '@nuxt/fonts',
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
-    'nuxt-schema-org',
-    'nuxt-og-image',
-  ],
+  modules: ["nitro-cloudflare-dev"],
 
   css: ['~/assets/css/main.css'],
 
@@ -115,12 +104,21 @@ export default defineNuxtConfig({
       routes: ['/', '/sitemap.xml'],
       failOnError: false,
     },
+
     storage: {
       data: { driver: 'fs', base: './.data/storage' },
     },
+
     devStorage: {
       data: { driver: 'fs', base: './.data/storage' },
     },
+
+    preset: "cloudflare_module",
+
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true
+    }
   },
 
   typescript: {
