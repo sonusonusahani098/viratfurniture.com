@@ -32,7 +32,7 @@ export default {
       return unauthorized();
     }
 
-    // Auth pass — Nuxt app ko request do
+    // Auth pass — Nuxt app ko request dos
     return app.fetch(request, env, ctx);
   },
 };
