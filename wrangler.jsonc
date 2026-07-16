@@ -4,7 +4,7 @@
   // uses the cloudflare_module preset), then `npx wrangler deploy`.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "viratfurniture-dev",
-  "main": "./.output/server/index.mjs",
+  "main": "./worker-dev.mjs", 
   "keep_vars": true,
   "compatibility_date": "2026-07-01",
   "compatibility_flags": ["nodejs_compat"],
