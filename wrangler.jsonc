@@ -1,0 +1,37 @@
+{
+  // Cloudflare Workers deployment for the Nuxt app.
+  // Build first (`npm run build` — the CF build env sets WORKERS_CI so Nitro
+  // uses the cloudflare_module preset), then `npx wrangler deploy`.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "viratfurniture-dev",
+  "main": "./.output/server/index.mjs",
+  "keep_vars": true,
+  "compatibility_date": "2026-07-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./.output/public",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // Nuxt Content queries run against this D1 database on Workers.
+  // Create it once:  npx wrangler d1 create viratfurniture-content
+  // then paste the returned database_id below.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "viratfurniture-content",
+      "database_id": "ad5c7f91-3be6-4501-818b-a569b35f38f3"
+    }
+  ],
+  // Gallery metadata (uploaded photo list) lives in this KV namespace.
+  // Create it once:  npx wrangler kv namespace create DATA
+  // then paste the returned id below.
+  "kv_namespaces": [
+    {
+      "binding": "DATA",
+      "id": "156d5931491f4d8f872917559875f20e"
+    }
+  ]
+}

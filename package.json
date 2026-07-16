@@ -1,0 +1,32 @@
+{
+  "name": "virat-furniture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.15.0",
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/robots": "^6.1.2",
+    "@nuxtjs/sitemap": "^8.2.2",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@pinia/nuxt": "^1.0.0",
+    "@takumi-rs/core": "^2.0.0-rc.16",
+    "@takumi-rs/wasm": "^2.0.0-rc.16",
+    "@vueuse/nuxt": "^14.3.0",
+    "better-sqlite3": "^12.11.1",
+    "nuxt": "^4.4.8",
+    "nuxt-og-image": "^6.7.2",
+    "nuxt-schema-org": "^6.2.3",
+    "pinia": "^4.0.2",
+    "tailwindcss": "^3.4.19",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  }
+}
