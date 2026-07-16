@@ -1,3 +1,6 @@
+// Cloudflare Workers builds set WORKERS_CI=1; NITRO_PRESET override also honoured.
+const isCloudflare = Boolean(process.env.WORKERS_CI) || (process.env.NITRO_PRESET || '').startsWith('cloudflare')
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
@@ -6,7 +9,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
-    '@nuxt/image',
     '@nuxt/fonts',
     '@pinia/nuxt',
     '@vueuse/nuxt',
@@ -86,11 +88,6 @@ export default defineNuxtConfig({
     },
   },
 
-  image: {
-    quality: 82,
-    format: ['webp', 'avif', 'jpeg'],
-  },
-
   fonts: {
     defaults: {
       weights: [400, 500, 600, 700, 800],
@@ -103,6 +100,9 @@ export default defineNuxtConfig({
         toc: { depth: 2 },
       },
     },
+    // Workers have no filesystem/SQLite — Nuxt Content must use a D1 database
+    // there (binding "DB" in wrangler.jsonc). Local dev/build keeps SQLite.
+    ...(isCloudflare ? { database: { type: 'd1' as const, bindingName: 'DB' } } : {}),
   },
 
   routeRules: {
@@ -110,13 +110,18 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    ...(isCloudflare ? { preset: 'cloudflare_module' } : {}),
     prerender: {
       crawlLinks: false,
       routes: ['/', '/sitemap.xml'],
       failOnError: false,
     },
     storage: {
-      data: { driver: 'fs', base: './.data/storage' },
+      // Gallery metadata: KV on Workers (binding "DATA" in wrangler.jsonc),
+      // plain filesystem locally.
+      data: isCloudflare
+        ? { driver: 'cloudflare-kv-binding', binding: 'DATA' }
+        : { driver: 'fs', base: './.data/storage' },
     },
     devStorage: {
       data: { driver: 'fs', base: './.data/storage' },

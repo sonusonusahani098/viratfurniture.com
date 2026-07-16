@@ -5,6 +5,9 @@
 dist/
 node_modules/
 
+# Wrangler build artifacts
+.wrangler/
+
 # Env
 .env
 .env.*
